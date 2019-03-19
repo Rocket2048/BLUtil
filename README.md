@@ -7,7 +7,7 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+<img src="https://github.com/iosBob/BLDoc/blob/master/BLUtil/bl001.png" width="375"/>
 
 ## Requirements
 
