@@ -1,0 +1,6 @@
+use_frameworks!
+
+target 'BLUtil_Example' do
+  
+  pod 'BLUtil', :path => '../'
+end

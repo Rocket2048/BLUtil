@@ -1,0 +1,16 @@
+PODS:
+  - BLUtil (1.0.0)
+
+DEPENDENCIES:
+  - BLUtil (from `../`)
+
+EXTERNAL SOURCES:
+  BLUtil:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BLUtil: c0d7964c42789317867a8f9fe841d2534f6f03f0
+
+PODFILE CHECKSUM: 5ddf03d36b776c9d80c9ba7702d19c2712eabe9a
+
+COCOAPODS: 1.6.0.beta.2
