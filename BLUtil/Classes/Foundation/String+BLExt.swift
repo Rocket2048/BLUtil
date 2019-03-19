@@ -26,7 +26,7 @@ extension String{
     }
     
     /// 字符串的截取
-    func substring(from: Int, to: Int) -> String {
+    public func substring(from: Int, to: Int) -> String {
         
         let fromIndex = index(startIndex, offsetBy: from)
         let toIndex = index(startIndex, offsetBy: to)
@@ -41,19 +41,19 @@ extension String{
     }
     
     /// 字符串的截取
-    func substring(from: Int) -> String {
+    public func substring(from: Int) -> String {
         
         return substring(from: from, to: nil)
     }
     
     /// 字符串的截取
-    func substring(to: Int) -> String {
+    public func substring(to: Int) -> String {
         
         return substring(from: nil, to: to)
     }
     
     /// 替换指定范围内的字符串
-    mutating func stringByReplacingCharactersInRange(index:Int,length:Int,replacText:String) -> String {
+    public mutating func stringByReplacingCharactersInRange(index:Int,length:Int,replacText:String) -> String {
         
         let startIndex = self.index(self.startIndex, offsetBy: index)
         self.replaceSubrange(startIndex..<self.index(startIndex, offsetBy: length), with: replacText)
@@ -61,26 +61,26 @@ extension String{
     }
     
     /// 替换指定字符串
-    mutating func stringByReplacingstringByReplacingString(text:String,replacText:String) -> String {
+    public mutating func stringByReplacingstringByReplacingString(text:String,replacText:String) -> String {
         
         return self.replacingOccurrences(of: text, with: replacText)
     }
   
     /// 删除最后一个字符
-    mutating func deleteEndCharacters() -> String {
+    public mutating func deleteEndCharacters() -> String {
         
         self.remove(at: self.index(before: self.endIndex))
         return self
     }
     
     /// 删除指定字符串
-    mutating func deleteString(string:String) -> String {
+    public mutating func deleteString(string:String) -> String {
         
         return self.replacingOccurrences(of: string, with: "")
     }
     
     /// 字符的插入
-    mutating func insertString(text:Character,index:Int) -> String {
+    public mutating func insertString(text:Character,index:Int) -> String {
         
         let start = self.index(self.startIndex, offsetBy: index)
         self.insert(text, at: start)
@@ -88,7 +88,7 @@ extension String{
     }
     
     /// 字符串的插入
-    mutating func insertString(text:String,index:Int) -> String {
+    public mutating func insertString(text:String,index:Int) -> String {
         
         let start = self.index(self.startIndex, offsetBy: index)
         self.insert(contentsOf: text, at: start)
@@ -99,7 +99,7 @@ extension String{
     ///
     /// - Parameter string: 拆分数组使用的字符串
     /// - Returns: 字符串数组
-    func split(string:String) -> [String] {
+    public func split(string:String) -> [String] {
         
         return NSString(string: self).components(separatedBy: string)
     }
@@ -121,7 +121,7 @@ extension String {
     }
     
     /// base64编码
-    var base64: String {
+    public var base64: String {
         
         let plainData = (self as NSString).data(using: String.Encoding.utf8.rawValue)
         let base64String = plainData!.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
@@ -159,7 +159,7 @@ extension String {
     }
     
     /// 是否是字母数字的组合
-    var isAlphanumeric: Bool {
+    public var isAlphanumeric: Bool {
         return !isEmpty && range(of: "[^a-zA-Z0-9]", options: .regularExpression) == nil
     }
 }
@@ -204,7 +204,7 @@ extension String {
     /// - Parameters:
     ///   - font: font
     ///   - fixedWidth: fixedWidth
-    func obtainTextHeight(font : UIFont = UIFont.systemFont(ofSize: 18), fixedWidth : CGFloat) -> CGFloat {
+    public func obtainTextHeight(font : UIFont = UIFont.systemFont(ofSize: 18), fixedWidth : CGFloat) -> CGFloat {
         
         guard self.count > 0 && fixedWidth > 0 else {
             return 0
@@ -220,7 +220,7 @@ extension String {
     /// 获取文本宽度
     ///
     /// - Parameter font: font
-    func obtainTextWidth(font : UIFont = UIFont.systemFont(ofSize: 17)) -> CGFloat {
+    public func obtainTextWidth(font : UIFont = UIFont.systemFont(ofSize: 17)) -> CGFloat {
         
         guard self.count > 0 else {
             return 0

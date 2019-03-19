@@ -11,7 +11,7 @@ import Foundation
 extension Dictionary {
     
     /// 拼接字典
-    mutating func addDictionary(_ para:Dictionary?) -> Dictionary{
+    public mutating func addDictionary(_ para:Dictionary?) -> Dictionary{
         
         if para != nil {
             for (key,value) in para! {
@@ -28,13 +28,13 @@ extension Dictionary {
     }
     
     /// 删除所有
-    mutating func removeAll(keys: [Key]) {
+    public mutating func removeAll(keys: [Key]) {
         
         keys.forEach({ removeValue(forKey: $0)})
     }
     
     /// Json字典转Json字符串
-    func jsonString(prettify: Bool = false) -> String? {
+    public func jsonString(prettify: Bool = false) -> String? {
         
         guard JSONSerialization.isValidJSONObject(self) else {
             return nil
@@ -45,7 +45,7 @@ extension Dictionary {
     }
     
     /// Json字典转Data
-    func jsonData(prettify: Bool = false) -> Data? {
+    public func jsonData(prettify: Bool = false) -> Data? {
         
         guard JSONSerialization.isValidJSONObject(self) else {
             return nil

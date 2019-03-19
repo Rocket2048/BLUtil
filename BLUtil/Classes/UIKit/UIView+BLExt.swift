@@ -17,7 +17,7 @@ struct RunTimeViewKey {
 extension UIView {
     
     /// viewId
-    var ViewID: String? {
+    public var ViewID: String? {
         set {
             objc_setAssociatedObject(self, RunTimeViewKey.RunTimeViewID!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
@@ -27,7 +27,7 @@ extension UIView {
     }
     
     /// ViewParam
-    var ViewParam: Dictionary<String, Any>? {
+    public var ViewParam: Dictionary<String, Any>? {
         set {
             objc_setAssociatedObject(self, RunTimeViewKey.RunTimeViewParam!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }

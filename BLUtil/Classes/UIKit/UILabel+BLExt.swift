@@ -49,7 +49,7 @@ extension UILabel{
 extension UILabel {
     
     /// 是否拥有长按复制功能
-    var isCopyable: Bool? {
+    public var isCopyable: Bool? {
         set {
             objc_setAssociatedObject(self, RunTimeLabelKey.isCopyable!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
             //添加长按手势

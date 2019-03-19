@@ -16,7 +16,7 @@ extension UIButton{
     /// - Parameters:
     ///   - normolColor: normolColor
     ///   - selectColor: selectColor
-    func setTitleColor(normolColor:UIColor,selectColor:UIColor) {
+    public func setTitleColor(normolColor:UIColor,selectColor:UIColor) {
         
         self.setTitleColor(normolColor, for: UIControlState.normal)
         self.setTitleColor(selectColor, for: UIControlState.selected)
@@ -27,7 +27,7 @@ extension UIButton{
     /// - Parameters:
     ///   - normolImge: normolImge
     ///   - selectImage: selectImage
-    func setImage(normolImge:UIImage,selectImage:UIImage) {
+    public func setImage(normolImge:UIImage,selectImage:UIImage) {
         
         self.setImage(normolImge, for: UIControlState.normal)
         self.setImage(selectImage, for: UIControlState.selected)
@@ -38,7 +38,7 @@ extension UIButton{
     /// - Parameters:
     ///   - title: title
     ///   - titleColor: color
-    func setTitleWithTitleColor(title:String,titleColor:UIColor) {
+    public func setTitleWithTitleColor(title:String,titleColor:UIColor) {
         
         self.setTitle(title, for: UIControlState.normal)
         self.setTitleColor(titleColor, for: UIControlState.normal)
@@ -49,7 +49,7 @@ extension UIButton{
     /// - Parameters:
     ///   - title: title
     ///   - image: image
-    func setTitleWithImage(title:String,image:UIImage) {
+    public func setTitleWithImage(title:String,image:UIImage) {
         setImage(image, for: .normal)
         setTitle(title, for: .normal)
     }
@@ -69,7 +69,7 @@ fileprivate struct RunTimeButtonKey {
 extension UIButton {
     
     /// 两次点击响应间隔时间
-    var timeInterval: CGFloat? {
+    public var timeInterval: CGFloat? {
         set {
             objc_setAssociatedObject(self, RunTimeButtonKey.timeInterval!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
             UIButton.changeFunction
@@ -141,7 +141,7 @@ extension UIButton {
     ///   - right: 右
     ///   - bottom: 下
     ///   - left: 左
-    func setEnlargeEdge(top:CGFloat,right:CGFloat,bottom:CGFloat,left:CGFloat)  {
+    public func setEnlargeEdge(top:CGFloat,right:CGFloat,bottom:CGFloat,left:CGFloat)  {
         
         self.topEdge = top
         self.rightEdge = right
@@ -180,7 +180,7 @@ extension UIButton {
     /// - Parameters:
     ///   - imageWidth: imageWidth
     ///   - space: image和Button的间距
-    func setImageFrontTextWithCenterAlignment(imageWidth:CGFloat, space:CGFloat) {
+    public func setImageFrontTextWithCenterAlignment(imageWidth:CGFloat, space:CGFloat) {
         
         let image = UIImage.scaleTo(image: self.imageView!.image!, w: imageWidth, h: imageWidth)
         setImage(image, for: .normal)
@@ -197,7 +197,7 @@ extension UIButton {
     ///   - imageWidth: imageWidth
     ///   - space: space
     ///   - buttonWidth: buttonWidth
-    func setImageFrontTextWithLeftAlignment(imageWidth:CGFloat, space:CGFloat,buttonWidth : CGFloat) {
+    public func setImageFrontTextWithLeftAlignment(imageWidth:CGFloat, space:CGFloat,buttonWidth : CGFloat) {
         
         let image = UIImage.scaleTo(image: self.imageView!.image!, w: imageWidth, h: imageWidth)
         setImage(image, for: .normal)
@@ -215,7 +215,7 @@ extension UIButton {
     /// - Parameters:
     ///   - imageWidth: imageWidth
     ///   - space: space
-    func setImageFrontTextWithTopAlignment(imageWidth:CGFloat, space:CGFloat) {
+    public func setImageFrontTextWithTopAlignment(imageWidth:CGFloat, space:CGFloat) {
         
         let image = UIImage.scaleTo(image: self.imageView!.image!, w: imageWidth, h: imageWidth)
         setImage(image, for: .normal)

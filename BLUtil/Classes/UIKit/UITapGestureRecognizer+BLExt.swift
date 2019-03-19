@@ -13,10 +13,10 @@ struct RunTimeTapGestureKey {
     static let timeInterval = UnsafeRawPointer.init(bitPattern: "timeInterval".hashValue)
 }
 
-extension UITapGestureRecognizer:UIGestureRecognizerDelegate{
+extension UITapGestureRecognizer:UIGestureRecognizerDelegate {
     
     /// 添加属性,在设置 timeInterval 的时候
-    var timeInterval: CGFloat? {
+    public var timeInterval: CGFloat? {
         
         set {
             objc_setAssociatedObject(self, RunTimeTapGestureKey.timeInterval!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
@@ -27,7 +27,7 @@ extension UITapGestureRecognizer:UIGestureRecognizerDelegate{
         }
     }
    
-    convenience init(target: Any?, action: Selector?,timeInterval:CGFloat) {
+    public convenience init(target: Any?, action: Selector?,timeInterval:CGFloat) {
         
         self.init(target: target, action: action)
         self.timeInterval = timeInterval

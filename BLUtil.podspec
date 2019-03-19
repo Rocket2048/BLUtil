@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BLUtil'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Some Swift Utils'
   s.swift_version    = '4.0'
   

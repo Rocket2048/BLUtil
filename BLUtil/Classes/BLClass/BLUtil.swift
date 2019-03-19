@@ -13,7 +13,7 @@ import UIKit
 public class BLUtil {
     
     /// String MD5 返回32位
-    static func md5(_ str:String) -> String {
+    static public func md5(_ str:String) -> String {
         
         let cStr = str.cString(using: String.Encoding.utf8);
         let buffer = UnsafeMutablePointer<UInt8>.allocate(capacity: 16)
@@ -29,7 +29,7 @@ public class BLUtil {
     }
     
     /// Data MD5 返回32位
-    static func md5(_ data:Data) -> String {
+    static public func md5(_ data:Data) -> String {
         
         var digest = [UInt8](repeating: 0, count: Int(CC_MD5_DIGEST_LENGTH))
         _ = data.withUnsafeBytes { (bytes) in
@@ -44,7 +44,7 @@ public class BLUtil {
     }
     
     /// 是否非iphoneX系列
-    static func judgeiPhoneX() -> Bool {
+    static public func judgeiPhoneX() -> Bool {
         
         let type = BLUtil.iphoneType()
         
@@ -59,7 +59,7 @@ public class BLUtil {
     }
     
     /// 手机型号
-    static func iphoneType() ->String {
+    static public func iphoneType() ->String {
         
         var systemInfo = utsname()
         uname(&systemInfo)

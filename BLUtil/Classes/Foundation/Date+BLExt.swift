@@ -48,13 +48,13 @@ extension Date {
     }
     
     /// date 转化为时间戳
-    func StampTime(from date:Date) ->  u_long{
+    public func StampTime(from date:Date) ->  u_long{
         
         return u_long(date.timeIntervalSince1970)
     }
     
     /// date 转字符串
-    func dateString(from date:Date) -> String {
+    public func dateString(from date:Date) -> String {
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -63,7 +63,7 @@ extension Date {
     }
     
     /// 时间戳转化为date
-    func date(from StampTime:u_long) -> Date {
+    public func date(from StampTime:u_long) -> Date {
         
         //转换为时间
         let timeInterval:TimeInterval = TimeInterval(StampTime)
@@ -72,7 +72,7 @@ extension Date {
     }
     
     /// 时间戳转化为字符串
-    func dateString(from StampTime:u_long) -> String {
+    public func dateString(from StampTime:u_long) -> String {
 
         let timeInterval:TimeInterval = TimeInterval(StampTime)
         let date = NSDate(timeIntervalSince1970: timeInterval + 8*60*60)
@@ -84,7 +84,7 @@ extension Date {
     }
     
     /// 字符串转date
-    func date(from dateString:String) -> Date {
+    public func date(from dateString:String) -> Date {
         
         let dateFormatter = DateFormatter.init()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -94,7 +94,7 @@ extension Date {
     }
     
     /// 字符串转时间戳
-    func StampTime(from dateString:String) -> u_long {
+    public func StampTime(from dateString:String) -> u_long {
         
         let dateFormatter = DateFormatter.init()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"

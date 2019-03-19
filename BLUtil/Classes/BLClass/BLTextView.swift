@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BLTextView: UITextView {
+open class BLTextView: UITextView {
     
     /// 点击两下键盘消失
     var tapTwiceDisapper: Bool = false{
@@ -33,7 +33,7 @@ class BLTextView: UITextView {
          NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: .UITextViewTextDidChange, object: self)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         
         super.init(coder: aDecoder)
          NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: .UITextViewTextDidChange, object: self)
@@ -76,7 +76,7 @@ extension BLTextView{
     }
     
     /// 重写绘制方法
-    override func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         
         //绘制placeHolder
         drawPlaceHolder(rect)

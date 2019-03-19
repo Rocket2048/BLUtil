@@ -48,7 +48,7 @@ extension UIImage{
 extension UIImage {
     
     /// 将图片绘制成指定大小
-    public class func scaleTo(image: UIImage, w: CGFloat, h: CGFloat) -> UIImage {
+    public static func scaleTo(image: UIImage, w: CGFloat, h: CGFloat) -> UIImage {
         
         let newSize = CGSize(width: w, height: h)
         UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
@@ -59,7 +59,7 @@ extension UIImage {
     }
     
     /// 使用颜色覆盖image
-    public class func withColor(color:UIColor) -> UIImage {
+    public static func withColor(color:UIColor) -> UIImage {
         
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size);

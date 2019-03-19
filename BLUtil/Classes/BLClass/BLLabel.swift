@@ -8,15 +8,15 @@
 
 import UIKit
 
-class BLLabel: UILabel {
+open class BLLabel: UILabel {
     
     /// 字间距
-    var WordSpace: CGFloat = 0.0
+    open var WordSpace: CGFloat = 0.0
     /// 行间距
-    var LineSpace: CGFloat = 0.0
+    open var LineSpace: CGFloat = 0.0
     
     /// 是否让文本居左上
-    var topText: Bool = false {
+    open var topText: Bool = false {
         
         didSet{
             if topText == true {
@@ -26,7 +26,7 @@ class BLLabel: UILabel {
     }
   
     /// 重写方法
-    override var text: String?{
+    override open var text: String?{
         
         didSet{
             self.setNeedsDisplay()
@@ -42,7 +42,7 @@ class BLLabel: UILabel {
     }
     
     /// 重写方法
-    override func drawText(in rect: CGRect) {
+    override open func drawText(in rect: CGRect) {
         
         if self.text?.isEmpty == true{
             return
