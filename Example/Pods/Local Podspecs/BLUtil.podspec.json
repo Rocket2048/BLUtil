@@ -22,7 +22,6 @@
   "source_files": "BLUtil/Classes/**/*",
   "frameworks": [
     "UIKit",
-    "Foundation",
-    "CommonCrypto"
+    "Foundation"
   ]
 }

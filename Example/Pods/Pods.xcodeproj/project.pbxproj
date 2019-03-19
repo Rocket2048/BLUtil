@@ -8,29 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		03A85D06FEFEA32DD35683DB3CD7C41C /* Pods-BLUtil_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4BF99D8DDC9F1B1D9DCF405BB2C01 /* Pods-BLUtil_Example-dummy.m */; };
-		0628BDE9B904F7B6BFAA9CEE60864EAE /* BLValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F387F86C7EDD051987364315C22FDC /* BLValue.swift */; };
-		0808A2B7FC5E10F3341B94653F669320 /* String+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862844E754D03598759FFF423A1C4A76 /* String+BLExt.swift */; };
-		084A3D0F114584CC8B7AD0B445EF90DD /* Dictionary+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF5608CD7AC3532C0D7BF251247FD0 /* Dictionary+BLExt.swift */; };
-		11E189CAF374DAD5F89148C4416EFB45 /* BLUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66A3A2DBD0860D3B418FACA6AB2D89 /* BLUtil.swift */; };
-		12870580A21D1F0812EE87BB9C6E37F7 /* Color+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192B38853D70FB483795B4413279377 /* Color+BLExt.swift */; };
-		1420D82CA63B4E097B91087FE9D9ED29 /* UITapGestureRecognizer+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D005DBB2B0E0299B2AB6AF46216511AC /* UITapGestureRecognizer+BLExt.swift */; };
-		15FB15E9DFF08E460C36C919EA17FB84 /* BLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F300470AF511E8437D74EFE4A3A24DD /* BLLabel.swift */; };
-		16D7EE59C6A6B46147FF5A50713FA113 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E939197A7BFE73B7DB0058E3D25A1941 /* UIKit.framework */; };
-		18DB1F17ACDEC7802FD3B06DC3F100E0 /* Date+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4869B68ACD6EC19C49CB63D86C236F /* Date+BLExt.swift */; };
-		37DCA2912375ABDCC74AEC925A9816FA /* BLUtil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE01946E611576064EBE07452C9503B /* BLUtil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46448D47341B7ED7D5C56FDEDEB2394A /* UIButton+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A868CEC00CC56504F7B7F405D56EA7DE /* UIButton+BLExt.swift */; };
+		045E3CA64C6A7DCCE29941CA0A648B65 /* BLUtil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE01946E611576064EBE07452C9503B /* BLUtil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04F9B8B3EE600D040B6D9BD525B6D3E6 /* Dictionary+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF5608CD7AC3532C0D7BF251247FD0 /* Dictionary+BLExt.swift */; };
+		1681D27C3BAC7442A2E04D455F4DAA99 /* Color+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192B38853D70FB483795B4413279377 /* Color+BLExt.swift */; };
+		213CA95271E3DFA539519017DAC44B11 /* BLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2118C6B08D4FE06A817EF1864EA4E9 /* BLTextView.swift */; };
+		2F92F498BB69A1AC1BB3FE2AE513165E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E404AA6957590324067E330E0EC533 /* UIKit.framework */; };
+		3069947CE5C1B07484BDF5EEAB318DD8 /* UITextField+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569240AC20D40FC57570F2B4213E90CC /* UITextField+BLExt.swift */; };
+		5644116760CD88C1F9753718C21A1280 /* UILabel+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71464A84B59608586361DFA7F6B5F8DA /* UILabel+BLExt.swift */; };
+		5CED00F5B4122E2F29E957A5D5B99EAC /* Array+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C39ECAC494E4AC94652835A388A55 /* Array+BLExt.swift */; };
 		5EB401D638D87388D5D2BEB64A93F9E0 /* Pods-BLUtil_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FACF9FB959378BB0CE52F6F515AAC9ED /* Pods-BLUtil_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E83C29F9FD7ACE7F59FE8F86E14EF59 /* UIImage+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF53CE63723E8E5C2FF756B63F133B15 /* UIImage+BLExt.swift */; };
-		79425F8540FC5BB08B91CCAA483AF7A7 /* BLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2118C6B08D4FE06A817EF1864EA4E9 /* BLTextView.swift */; };
-		A55A14B7C3E15C4ED5955B27400388F3 /* UILabel+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71464A84B59608586361DFA7F6B5F8DA /* UILabel+BLExt.swift */; };
-		A7A61FB58F6A06DA9FE79968AB5CF3F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B9E470A56ED6BDCFCC99D6B17F7B79 /* Foundation.framework */; };
-		A83E1CA3CE05632152E44D35169EEE54 /* Array+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C39ECAC494E4AC94652835A388A55 /* Array+BLExt.swift */; };
-		B7628FE8C72C26E81C7E5BBD90AF95BA /* UIView+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A4A828FE60E838E7264FAAAC1DAD9 /* UIView+BLExt.swift */; };
-		CFB3A81A7C4818E4C93666E447D04710 /* BLRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2248703010A6DB799DA6071FD6E1ADBE /* BLRegular.swift */; };
-		D54EF47F489A2BC3702BF49EEC0782E6 /* BLUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 722848A00063CECF61520343E2BE8040 /* BLUtil-dummy.m */; };
-		D799663A6E9101DCB9D99DEA6CB07C7E /* UITextField+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569240AC20D40FC57570F2B4213E90CC /* UITextField+BLExt.swift */; };
-		E4225B3B9CDAB7032F0005C7F0A4E5E2 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED23446526D7DFFC9DF02D5B7C856C39 /* CommonCrypto.framework */; };
-		F7D3DD9ABFAC92B8C247DDBDE548A75E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B9E470A56ED6BDCFCC99D6B17F7B79 /* Foundation.framework */; };
+		63CED096F6F07AC0C297936BA2220430 /* BLUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 722848A00063CECF61520343E2BE8040 /* BLUtil-dummy.m */; };
+		93F2A49F0B16E3B40A5B955DE1305AFE /* BLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F300470AF511E8437D74EFE4A3A24DD /* BLLabel.swift */; };
+		9A12C00587E4671C72A18F6647C35728 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
+		9D5CC0AB6607F3CC5486DD343935CFED /* String+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862844E754D03598759FFF423A1C4A76 /* String+BLExt.swift */; };
+		CD885A1F6462D3CD4083B836EAC73B8C /* BLValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F387F86C7EDD051987364315C22FDC /* BLValue.swift */; };
+		DBDB6836053A802D75C02EA91CF958F4 /* Date+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4869B68ACD6EC19C49CB63D86C236F /* Date+BLExt.swift */; };
+		DC0469234A906C376BC0D9D76610E241 /* UIImage+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF53CE63723E8E5C2FF756B63F133B15 /* UIImage+BLExt.swift */; };
+		DC2F9F768050D5C51FB6E6C645D5A263 /* BLRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2248703010A6DB799DA6071FD6E1ADBE /* BLRegular.swift */; };
+		E40DCA8845BA988FEC232D7317A93A66 /* UITapGestureRecognizer+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D005DBB2B0E0299B2AB6AF46216511AC /* UITapGestureRecognizer+BLExt.swift */; };
+		E70B4C7D6C253B5DEFC7A8DFB571EC40 /* UIButton+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A868CEC00CC56504F7B7F405D56EA7DE /* UIButton+BLExt.swift */; };
+		E89D2353FD69D01FCB3FCEF902B7214E /* BLUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66A3A2DBD0860D3B418FACA6AB2D89 /* BLUtil.swift */; };
+		EA687E1FE4E08FFB6C053D93C8E59554 /* UIView+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A4A828FE60E838E7264FAAAC1DAD9 /* UIView+BLExt.swift */; };
+		F7D3DD9ABFAC92B8C247DDBDE548A75E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +37,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BD1FB8F7A1432FE94B4854DC61F65D6B;
+			remoteGlobalIDString = 12F69AE5C3B48B8B95C16A4F8FE0905A;
 			remoteInfo = BLUtil;
 		};
 /* End PBXContainerItemProxy section */
@@ -48,38 +47,37 @@
 		13EF5608CD7AC3532C0D7BF251247FD0 /* Dictionary+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Dictionary+BLExt.swift"; sourceTree = "<group>"; };
 		2248703010A6DB799DA6071FD6E1ADBE /* BLRegular.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLRegular.swift; sourceTree = "<group>"; };
 		249F58F2F497805ADA9492B85A99DC3A /* Pods-BLUtil_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLUtil_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2C026D38BF59F27C24189BB877F131FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2C026D38BF59F27C24189BB877F131FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		35FAD6A9D531DF911C3FEEBD68F3519F /* Pods-BLUtil_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLUtil_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3A2118C6B08D4FE06A817EF1864EA4E9 /* BLTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLTextView.swift; sourceTree = "<group>"; };
-		421966C2E2E3BFDFCBD7ED207B8B90ED /* Pods_BLUtil_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLUtil_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		421966C2E2E3BFDFCBD7ED207B8B90ED /* Pods_BLUtil_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLUtil_Example.framework; path = "Pods-BLUtil_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		442C39ECAC494E4AC94652835A388A55 /* Array+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+BLExt.swift"; sourceTree = "<group>"; };
 		4F66A3A2DBD0860D3B418FACA6AB2D89 /* BLUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLUtil.swift; sourceTree = "<group>"; };
 		569240AC20D40FC57570F2B4213E90CC /* UITextField+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextField+BLExt.swift"; sourceTree = "<group>"; };
-		58FC52C05336C1661D5B431D7897443E /* BLUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BLUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58FC52C05336C1661D5B431D7897443E /* BLUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BLUtil.framework; path = BLUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F05795759DC91E053FA31BB1D841757 /* Pods-BLUtil_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BLUtil_Example.modulemap"; sourceTree = "<group>"; };
 		5F300470AF511E8437D74EFE4A3A24DD /* BLLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLLabel.swift; sourceTree = "<group>"; };
 		69AB7B41D3A57BA8D56E1C72034674BF /* BLUtil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLUtil-prefix.pch"; sourceTree = "<group>"; };
 		6CD4BF99D8DDC9F1B1D9DCF405BB2C01 /* Pods-BLUtil_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLUtil_Example-dummy.m"; sourceTree = "<group>"; };
 		71464A84B59608586361DFA7F6B5F8DA /* UILabel+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+BLExt.swift"; sourceTree = "<group>"; };
 		722848A00063CECF61520343E2BE8040 /* BLUtil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BLUtil-dummy.m"; sourceTree = "<group>"; };
+		74E404AA6957590324067E330E0EC533 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8192B38853D70FB483795B4413279377 /* Color+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Color+BLExt.swift"; sourceTree = "<group>"; };
 		844A4A828FE60E838E7264FAAAC1DAD9 /* UIView+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+BLExt.swift"; sourceTree = "<group>"; };
 		862844E754D03598759FFF423A1C4A76 /* String+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+BLExt.swift"; sourceTree = "<group>"; };
-		8E013A1D2AF98736DC1AFF5EE31AA6A0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8E013A1D2AF98736DC1AFF5EE31AA6A0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9A86AE2BF0BCA5639E28F17BC741862E /* Pods-BLUtil_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLUtil_Example-Info.plist"; sourceTree = "<group>"; };
 		A19FA4F67362C867CA700F83ED446F82 /* Pods-BLUtil_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLUtil_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A868CEC00CC56504F7B7F405D56EA7DE /* UIButton+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+BLExt.swift"; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B6CFFE7BB67BB9633746D801ADF66880 /* BLUtil.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BLUtil.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C0B9E470A56ED6BDCFCC99D6B17F7B79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B6CFFE7BB67BB9633746D801ADF66880 /* BLUtil.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BLUtil.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C7F387F86C7EDD051987364315C22FDC /* BLValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLValue.swift; sourceTree = "<group>"; };
 		D005DBB2B0E0299B2AB6AF46216511AC /* UITapGestureRecognizer+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+BLExt.swift"; sourceTree = "<group>"; };
 		D438973071CA2C0DE8C0EA96A3CBA67C /* BLUtil.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BLUtil.xcconfig; sourceTree = "<group>"; };
 		D479E556540FBD11D7D971C1FABF86A0 /* BLUtil.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BLUtil.modulemap; sourceTree = "<group>"; };
 		DF53CE63723E8E5C2FF756B63F133B15 /* UIImage+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+BLExt.swift"; sourceTree = "<group>"; };
 		E80013A7116A4DDFEFAD7AFABBE1B732 /* Pods-BLUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E939197A7BFE73B7DB0058E3D25A1941 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		ED23446526D7DFFC9DF02D5B7C856C39 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CommonCrypto.framework; sourceTree = DEVELOPER_DIR; };
 		EE4869B68ACD6EC19C49CB63D86C236F /* Date+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+BLExt.swift"; sourceTree = "<group>"; };
 		FACF9FB959378BB0CE52F6F515AAC9ED /* Pods-BLUtil_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLUtil_Example-umbrella.h"; sourceTree = "<group>"; };
 		FF49F4428BB0E9FDAF655BB28AC3ACB3 /* BLUtil-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BLUtil-Info.plist"; sourceTree = "<group>"; };
@@ -87,13 +85,12 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C89926DCB47137EAF2BED2FBF2D51F0 /* Frameworks */ = {
+		02D525BA0383ADAEE0D442B4D6F71866 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4225B3B9CDAB7032F0005C7F0A4E5E2 /* CommonCrypto.framework in Frameworks */,
-				A7A61FB58F6A06DA9FE79968AB5CF3F7 /* Foundation.framework in Frameworks */,
-				16D7EE59C6A6B46147FF5A50713FA113 /* UIKit.framework in Frameworks */,
+				9A12C00587E4671C72A18F6647C35728 /* Foundation.framework in Frameworks */,
+				2F92F498BB69A1AC1BB3FE2AE513165E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,12 +105,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+		06CDD10DE71306278CF89108B3036DFD /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EF3B275A1D24ACA6EFCB13F03C119803 /* iOS */,
+				2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */,
+				74E404AA6957590324067E330E0EC533 /* UIKit.framework */,
 			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		3551AACB127548CB126A6C8190DD6B6D /* Products */ = {
@@ -128,14 +126,22 @@
 		3FC1736A59C07DE31577A21AA529ABBF /* BLClass */ = {
 			isa = PBXGroup;
 			children = (
-				4F66A3A2DBD0860D3B418FACA6AB2D89 /* BLUtil.swift */,
 				5F300470AF511E8437D74EFE4A3A24DD /* BLLabel.swift */,
 				2248703010A6DB799DA6071FD6E1ADBE /* BLRegular.swift */,
 				3A2118C6B08D4FE06A817EF1864EA4E9 /* BLTextView.swift */,
+				4F66A3A2DBD0860D3B418FACA6AB2D89 /* BLUtil.swift */,
 				C7F387F86C7EDD051987364315C22FDC /* BLValue.swift */,
 			);
 			name = BLClass;
 			path = BLUtil/Classes/BLClass;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06CDD10DE71306278CF89108B3036DFD /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4BB2A0E5FEC6761877BFD01B17D4919D /* Foundation */ = {
@@ -170,7 +176,7 @@
 			children = (
 				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
 				9E82273A25B8E2A89FC78D3CB490EAC2 /* Development Pods */,
-				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				3551AACB127548CB126A6C8190DD6B6D /* Products */,
 				8BF3ABE0ED19E401C879CB0DA7DA821A /* Targets Support Files */,
 			);
@@ -246,24 +252,14 @@
 			path = BLUtil/Classes/UIKit;
 			sourceTree = "<group>";
 		};
-		EF3B275A1D24ACA6EFCB13F03C119803 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				ED23446526D7DFFC9DF02D5B7C856C39 /* CommonCrypto.framework */,
-				C0B9E470A56ED6BDCFCC99D6B17F7B79 /* Foundation.framework */,
-				E939197A7BFE73B7DB0058E3D25A1941 /* UIKit.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5F9E5160947D6D4D557B360DC358D8DC /* Headers */ = {
+		0197945B8CD5CC551861CD408882F5F5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37DCA2912375ABDCC74AEC925A9816FA /* BLUtil-umbrella.h in Headers */,
+				045E3CA64C6A7DCCE29941CA0A648B65 /* BLUtil-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +274,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		12F69AE5C3B48B8B95C16A4F8FE0905A /* BLUtil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4F87FAB223371BBF62E4C93AB1B7CEE /* Build configuration list for PBXNativeTarget "BLUtil" */;
+			buildPhases = (
+				0197945B8CD5CC551861CD408882F5F5 /* Headers */,
+				1453C14AE6EB29E02226F9BC4219512C /* Sources */,
+				02D525BA0383ADAEE0D442B4D6F71866 /* Frameworks */,
+				5E391361B70CC42A0AA4D345F699317C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BLUtil;
+			productName = BLUtil;
+			productReference = 58FC52C05336C1661D5B431D7897443E /* BLUtil.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		3863DB11B228DF55ED56D4FF2F191207 /* Pods-BLUtil_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 022C0F8BD659E728A6977E91C2906332 /* Build configuration list for PBXNativeTarget "Pods-BLUtil_Example" */;
@@ -295,24 +309,6 @@
 			name = "Pods-BLUtil_Example";
 			productName = "Pods-BLUtil_Example";
 			productReference = 421966C2E2E3BFDFCBD7ED207B8B90ED /* Pods_BLUtil_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BD1FB8F7A1432FE94B4854DC61F65D6B /* BLUtil */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E43B9F0948D49CF38017676D2C0C9301 /* Build configuration list for PBXNativeTarget "BLUtil" */;
-			buildPhases = (
-				5F9E5160947D6D4D557B360DC358D8DC /* Headers */,
-				F88106D906FEAB5E22AE69550549772B /* Sources */,
-				2C89926DCB47137EAF2BED2FBF2D51F0 /* Frameworks */,
-				A1BBF679B7D7457AC12D4F184905C8C4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BLUtil;
-			productName = BLUtil;
-			productReference = 58FC52C05336C1661D5B431D7897443E /* BLUtil.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -336,7 +332,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BD1FB8F7A1432FE94B4854DC61F65D6B /* BLUtil */,
+				12F69AE5C3B48B8B95C16A4F8FE0905A /* BLUtil */,
 				3863DB11B228DF55ED56D4FF2F191207 /* Pods-BLUtil_Example */,
 			);
 		};
@@ -350,7 +346,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1BBF679B7D7457AC12D4F184905C8C4 /* Resources */ = {
+		5E391361B70CC42A0AA4D345F699317C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,35 +356,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1453C14AE6EB29E02226F9BC4219512C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CED00F5B4122E2F29E957A5D5B99EAC /* Array+BLExt.swift in Sources */,
+				93F2A49F0B16E3B40A5B955DE1305AFE /* BLLabel.swift in Sources */,
+				DC2F9F768050D5C51FB6E6C645D5A263 /* BLRegular.swift in Sources */,
+				213CA95271E3DFA539519017DAC44B11 /* BLTextView.swift in Sources */,
+				63CED096F6F07AC0C297936BA2220430 /* BLUtil-dummy.m in Sources */,
+				E89D2353FD69D01FCB3FCEF902B7214E /* BLUtil.swift in Sources */,
+				CD885A1F6462D3CD4083B836EAC73B8C /* BLValue.swift in Sources */,
+				1681D27C3BAC7442A2E04D455F4DAA99 /* Color+BLExt.swift in Sources */,
+				DBDB6836053A802D75C02EA91CF958F4 /* Date+BLExt.swift in Sources */,
+				04F9B8B3EE600D040B6D9BD525B6D3E6 /* Dictionary+BLExt.swift in Sources */,
+				9D5CC0AB6607F3CC5486DD343935CFED /* String+BLExt.swift in Sources */,
+				E70B4C7D6C253B5DEFC7A8DFB571EC40 /* UIButton+BLExt.swift in Sources */,
+				DC0469234A906C376BC0D9D76610E241 /* UIImage+BLExt.swift in Sources */,
+				5644116760CD88C1F9753718C21A1280 /* UILabel+BLExt.swift in Sources */,
+				E40DCA8845BA988FEC232D7317A93A66 /* UITapGestureRecognizer+BLExt.swift in Sources */,
+				3069947CE5C1B07484BDF5EEAB318DD8 /* UITextField+BLExt.swift in Sources */,
+				EA687E1FE4E08FFB6C053D93C8E59554 /* UIView+BLExt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		565F5033642D6C963BEF00CC4440EFAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				03A85D06FEFEA32DD35683DB3CD7C41C /* Pods-BLUtil_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F88106D906FEAB5E22AE69550549772B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A83E1CA3CE05632152E44D35169EEE54 /* Array+BLExt.swift in Sources */,
-				15FB15E9DFF08E460C36C919EA17FB84 /* BLLabel.swift in Sources */,
-				CFB3A81A7C4818E4C93666E447D04710 /* BLRegular.swift in Sources */,
-				79425F8540FC5BB08B91CCAA483AF7A7 /* BLTextView.swift in Sources */,
-				D54EF47F489A2BC3702BF49EEC0782E6 /* BLUtil-dummy.m in Sources */,
-				11E189CAF374DAD5F89148C4416EFB45 /* BLUtil.swift in Sources */,
-				0628BDE9B904F7B6BFAA9CEE60864EAE /* BLValue.swift in Sources */,
-				12870580A21D1F0812EE87BB9C6E37F7 /* Color+BLExt.swift in Sources */,
-				18DB1F17ACDEC7802FD3B06DC3F100E0 /* Date+BLExt.swift in Sources */,
-				084A3D0F114584CC8B7AD0B445EF90DD /* Dictionary+BLExt.swift in Sources */,
-				0808A2B7FC5E10F3341B94653F669320 /* String+BLExt.swift in Sources */,
-				46448D47341B7ED7D5C56FDEDEB2394A /* UIButton+BLExt.swift in Sources */,
-				6E83C29F9FD7ACE7F59FE8F86E14EF59 /* UIImage+BLExt.swift in Sources */,
-				A55A14B7C3E15C4ED5955B27400388F3 /* UILabel+BLExt.swift in Sources */,
-				1420D82CA63B4E097B91087FE9D9ED29 /* UITapGestureRecognizer+BLExt.swift in Sources */,
-				D799663A6E9101DCB9D99DEA6CB07C7E /* UITextField+BLExt.swift in Sources */,
-				B7628FE8C72C26E81C7E5BBD90AF95BA /* UIView+BLExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,13 +394,13 @@
 		19CBDF7E5A8BFDC5AD3FA068F90A9D06 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BLUtil;
-			target = BD1FB8F7A1432FE94B4854DC61F65D6B /* BLUtil */;
+			target = 12F69AE5C3B48B8B95C16A4F8FE0905A /* BLUtil */;
 			targetProxy = D6B908720AD06292F0D9080DEA1D1754 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3341F48A1C2BE6FB03CC990F8CBC0D7B /* Debug */ = {
+		299E01E9A2D00BDAA0850EBD578A3EB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D438973071CA2C0DE8C0EA96A3CBA67C /* BLUtil.xcconfig */;
 			buildSettings = {
@@ -430,10 +426,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		36AF9E7B2108BC13CD08B0F3A84A2F25 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -555,41 +552,10 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		C5515C41F0D6147B325AB7958AE0DE1D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D438973071CA2C0DE8C0EA96A3CBA67C /* BLUtil.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BLUtil/BLUtil-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BLUtil/BLUtil-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BLUtil/BLUtil.modulemap";
-				PRODUCT_MODULE_NAME = BLUtil;
-				PRODUCT_NAME = BLUtil;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -657,6 +623,37 @@
 			};
 			name = Debug;
 		};
+		EB2A44E55E3F667E1ABF9182D4030B7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D438973071CA2C0DE8C0EA96A3CBA67C /* BLUtil.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BLUtil/BLUtil-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BLUtil/BLUtil-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BLUtil/BLUtil.modulemap";
+				PRODUCT_MODULE_NAME = BLUtil;
+				PRODUCT_NAME = BLUtil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -678,11 +675,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E43B9F0948D49CF38017676D2C0C9301 /* Build configuration list for PBXNativeTarget "BLUtil" */ = {
+		D4F87FAB223371BBF62E4C93AB1B7CEE /* Build configuration list for PBXNativeTarget "BLUtil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3341F48A1C2BE6FB03CC990F8CBC0D7B /* Debug */,
-				C5515C41F0D6147B325AB7958AE0DE1D /* Release */,
+				EB2A44E55E3F667E1ABF9182D4030B7F /* Debug */,
+				299E01E9A2D00BDAA0850EBD578A3EB9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
