@@ -22,7 +22,7 @@ pod 'BLUtil'
 
 ## Author
 
-ok@linbok.com, bo.lin@juneyaokc.com
+iosBob, ok@linbok.com
 
 ## License
 
