@@ -78,7 +78,7 @@ open class BLValue: NSObject {
         return data!
     }
     
-    /// data转数组
+    /// data转数组 有问题
     public static func array(from data:Data) -> Array<Any> {
         
         let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers)

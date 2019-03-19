@@ -11,7 +11,7 @@ import UIKit
 open class BLTextView: UITextView {
     
     /// 点击两下键盘消失
-    var tapTwiceDisapper: Bool = false{
+    public var tapTwiceDisapper: Bool = false{
         
         didSet{
             let tap = UITapGestureRecognizer(target: self, action: #selector(tapTwiceDisapperEvent))
@@ -21,13 +21,13 @@ open class BLTextView: UITextView {
     }
     
     /// 最大允许输入文本输入量
-    var MaxCount: Int = 0
+    public var MaxCount: Int = 0
     /// 设置placeHolder
-    var placeHolder: String = ""
+    public var placeHolder: String = ""
     /// 设置placeHolder的颜色
-    var placeHolderColor: UIColor = UIColor.gray
+    public var placeHolderColor: UIColor = UIColor.gray
    
-    override init(frame: CGRect, textContainer: NSTextContainer?) {
+    public override init(frame: CGRect, textContainer: NSTextContainer?) {
         
         super.init(frame: frame, textContainer: textContainer)
          NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: .UITextViewTextDidChange, object: self)
@@ -45,7 +45,7 @@ open class BLTextView: UITextView {
    ///   - placeHolder: placeHolder
    ///   - placeHolderColor: placeHolderColor
    ///   - MaxCount: 限制数量
-   convenience init(placeHolder:String?, placeHolderColor:UIColor?,MaxCount:Int?) {
+   public convenience init(placeHolder:String?, placeHolderColor:UIColor?,MaxCount:Int?) {
     
         self.init(frame: .zero)
         self.placeHolder = placeHolder ?? ""
@@ -58,7 +58,7 @@ open class BLTextView: UITextView {
     }
 }
 
-extension BLTextView{
+extension BLTextView {
     
     /// 文本改变
     @objc func textDidChange() {
@@ -85,7 +85,7 @@ extension BLTextView{
     }
 
     /// 绘制placeHolder
-    func drawPlaceHolder(_ rect: CGRect)  {
+    fileprivate func drawPlaceHolder(_ rect: CGRect)  {
         
         guard !self.hasText else {
             return
@@ -102,7 +102,7 @@ extension BLTextView{
     }
     
     /// 绘制文本限制数量
-    func drawMaxCountText(_ rect: CGRect)  {
+    fileprivate func drawMaxCountText(_ rect: CGRect)  {
         
         guard self.MaxCount > 1 else {
             return
@@ -129,7 +129,7 @@ extension BLTextView{
     }
     
     /// 字符串的替换
-    func stringByReplacing(textString:String,index:Int,length:Int,replacText:String) -> String {
+    fileprivate func stringByReplacing(textString:String,index:Int,length:Int,replacText:String) -> String {
         
         var TEXT = textString
         let startIndex = textString.index(textString.startIndex, offsetBy: index)
