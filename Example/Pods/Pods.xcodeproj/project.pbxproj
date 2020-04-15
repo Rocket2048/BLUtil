@@ -7,281 +7,286 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A85D06FEFEA32DD35683DB3CD7C41C /* Pods-BLUtil_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD4BF99D8DDC9F1B1D9DCF405BB2C01 /* Pods-BLUtil_Example-dummy.m */; };
-		045E3CA64C6A7DCCE29941CA0A648B65 /* BLUtil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFE01946E611576064EBE07452C9503B /* BLUtil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		04F9B8B3EE600D040B6D9BD525B6D3E6 /* Dictionary+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EF5608CD7AC3532C0D7BF251247FD0 /* Dictionary+BLExt.swift */; };
-		1681D27C3BAC7442A2E04D455F4DAA99 /* Color+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192B38853D70FB483795B4413279377 /* Color+BLExt.swift */; };
-		213CA95271E3DFA539519017DAC44B11 /* BLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2118C6B08D4FE06A817EF1864EA4E9 /* BLTextView.swift */; };
-		2F92F498BB69A1AC1BB3FE2AE513165E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E404AA6957590324067E330E0EC533 /* UIKit.framework */; };
-		3069947CE5C1B07484BDF5EEAB318DD8 /* UITextField+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569240AC20D40FC57570F2B4213E90CC /* UITextField+BLExt.swift */; };
-		5644116760CD88C1F9753718C21A1280 /* UILabel+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71464A84B59608586361DFA7F6B5F8DA /* UILabel+BLExt.swift */; };
-		5CED00F5B4122E2F29E957A5D5B99EAC /* Array+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C39ECAC494E4AC94652835A388A55 /* Array+BLExt.swift */; };
-		5EB401D638D87388D5D2BEB64A93F9E0 /* Pods-BLUtil_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FACF9FB959378BB0CE52F6F515AAC9ED /* Pods-BLUtil_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63CED096F6F07AC0C297936BA2220430 /* BLUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 722848A00063CECF61520343E2BE8040 /* BLUtil-dummy.m */; };
-		93F2A49F0B16E3B40A5B955DE1305AFE /* BLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F300470AF511E8437D74EFE4A3A24DD /* BLLabel.swift */; };
-		9A12C00587E4671C72A18F6647C35728 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
-		9D5CC0AB6607F3CC5486DD343935CFED /* String+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862844E754D03598759FFF423A1C4A76 /* String+BLExt.swift */; };
-		CD885A1F6462D3CD4083B836EAC73B8C /* BLValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F387F86C7EDD051987364315C22FDC /* BLValue.swift */; };
-		DBDB6836053A802D75C02EA91CF958F4 /* Date+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE4869B68ACD6EC19C49CB63D86C236F /* Date+BLExt.swift */; };
-		DC0469234A906C376BC0D9D76610E241 /* UIImage+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF53CE63723E8E5C2FF756B63F133B15 /* UIImage+BLExt.swift */; };
-		DC2F9F768050D5C51FB6E6C645D5A263 /* BLRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2248703010A6DB799DA6071FD6E1ADBE /* BLRegular.swift */; };
-		E40DCA8845BA988FEC232D7317A93A66 /* UITapGestureRecognizer+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D005DBB2B0E0299B2AB6AF46216511AC /* UITapGestureRecognizer+BLExt.swift */; };
-		E70B4C7D6C253B5DEFC7A8DFB571EC40 /* UIButton+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A868CEC00CC56504F7B7F405D56EA7DE /* UIButton+BLExt.swift */; };
-		E89D2353FD69D01FCB3FCEF902B7214E /* BLUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F66A3A2DBD0860D3B418FACA6AB2D89 /* BLUtil.swift */; };
-		EA687E1FE4E08FFB6C053D93C8E59554 /* UIView+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844A4A828FE60E838E7264FAAAC1DAD9 /* UIView+BLExt.swift */; };
-		F7D3DD9ABFAC92B8C247DDBDE548A75E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */; };
+		04101D3D48B3C9E656469F4A9776D5ED /* Pods-BLUtil_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 333A8C420477BF349E6FE875CF99C4D2 /* Pods-BLUtil_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		141641A1BDD3084F1FADC9311B05F312 /* UILabel+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753CB54A023F30A081DB3ED5CB43E53 /* UILabel+BLExt.swift */; };
+		1EE94940A1CCBE5EBC2A6DC74C46C21D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
+		1F624868518FED6ABBDFECCCCAF213A2 /* UIView+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299171A6969A0D8C874B1BABF80667F /* UIView+BLExt.swift */; };
+		2246B1036C372A3D9B2704AC4E0035D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		3477169285644F3C37CA4B55AFDE9A1D /* UITextField+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA414598BE44DF3A6433AA1DD13E3AB3 /* UITextField+BLExt.swift */; };
+		45A34477464AA504F44EA26CC052E343 /* UIControl+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784DB7DAF923766FFF37AEBFA80A5A1F /* UIControl+BLExt.swift */; };
+		4A91996293F87EF29E30253F40CA2A12 /* UIButton+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F23B183E75926279FF4D01316F09AAC /* UIButton+BLExt.swift */; };
+		57A343A5EB0734EDCAFBE30D21ED3519 /* BLUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1187D5EF872B848B0E4EA35B784EF1E /* BLUtil.swift */; };
+		64C9BD6D96BABCB1044456EA4C29FD3D /* BLUtil-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40545CA4956A2E7DD04D71A49FD8646E /* BLUtil-dummy.m */; };
+		78C6044618D271BDFF402AD34D3AEFAC /* Color+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12A4CB75408DB4ACEA5E5F4BC90679B /* Color+BLExt.swift */; };
+		7C1E9DDBA0BBA97F4B3A1FFC4CC527C1 /* Pods-BLUtil_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E4CBDB57BD2D9CDFFB0F0D864CC4E3 /* Pods-BLUtil_Example-dummy.m */; };
+		7D5944AA50356CF1F5818E632F079FDE /* Array+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C75C5CC2049B9E7FF7D9FC71F52343 /* Array+BLExt.swift */; };
+		963887EDDC42681B26C5F6C0D7DEEE3C /* String+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47EC90F321D1DEEAB30FD60E2B47EE7 /* String+BLExt.swift */; };
+		969BC4F2CF6E1E1AE219AF1020FA2F9D /* BLRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DF0DF918C0168F2200769BDECC34E5 /* BLRegular.swift */; };
+		AE8CEA2A16B5C91500E643561D6368F5 /* UIImage+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14192EBEE3D931D1B82834D062A0B208 /* UIImage+BLExt.swift */; };
+		BA950D4282DA9CC8D3917B09371D1811 /* BLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77743CC1AC5175AA3040182BF01C3F90 /* BLLabel.swift */; };
+		DFC11E241C0B12DC0AA58B5947A99C95 /* Date+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7FA9AB8D6813502FD58D7BBC08247D /* Date+BLExt.swift */; };
+		E27778EA15BEDD06C420C6BEB486A98F /* BLTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751EDE225A42970FA613255A743F41C0 /* BLTextView.swift */; };
+		E517A82BF44A3D91167B99989DC62D80 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
+		E62A86CC85DDC46A99E4AF67E45BB901 /* BLUtil-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D303394145958B67E1F61D2F038A03 /* BLUtil-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F19AEDCBB34EA4C3A600E2DE481B52D6 /* Dictionary+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F70127AB0E3F90FC651444F7F233D2 /* Dictionary+BLExt.swift */; };
+		F937389755247CD38113492511E2D5F8 /* UITapGestureRecognizer+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7878DC7A458363FFA26AD8E6D02AE5F0 /* UITapGestureRecognizer+BLExt.swift */; };
+		FFF73D4354BFEDD967A8441D995A063D /* BLValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE96683DB2A5F899AAD5CC5C98E1A6C /* BLValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D6B908720AD06292F0D9080DEA1D1754 /* PBXContainerItemProxy */ = {
+		CBD06F62B97CEC8B4BD20BCB36E7CDA6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 12F69AE5C3B48B8B95C16A4F8FE0905A;
+			remoteGlobalIDString = 1B266FE3E31492E80867713BF2A5D150;
 			remoteInfo = BLUtil;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03B4A509B64C412BC6A57DCEDFE9EDCE /* Pods-BLUtil_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLUtil_Example-frameworks.sh"; sourceTree = "<group>"; };
-		13EF5608CD7AC3532C0D7BF251247FD0 /* Dictionary+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Dictionary+BLExt.swift"; sourceTree = "<group>"; };
-		2248703010A6DB799DA6071FD6E1ADBE /* BLRegular.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLRegular.swift; sourceTree = "<group>"; };
-		249F58F2F497805ADA9492B85A99DC3A /* Pods-BLUtil_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLUtil_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2C026D38BF59F27C24189BB877F131FE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		35FAD6A9D531DF911C3FEEBD68F3519F /* Pods-BLUtil_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLUtil_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3A2118C6B08D4FE06A817EF1864EA4E9 /* BLTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLTextView.swift; sourceTree = "<group>"; };
-		421966C2E2E3BFDFCBD7ED207B8B90ED /* Pods_BLUtil_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLUtil_Example.framework; path = "Pods-BLUtil_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		442C39ECAC494E4AC94652835A388A55 /* Array+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+BLExt.swift"; sourceTree = "<group>"; };
-		4F66A3A2DBD0860D3B418FACA6AB2D89 /* BLUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLUtil.swift; sourceTree = "<group>"; };
-		569240AC20D40FC57570F2B4213E90CC /* UITextField+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextField+BLExt.swift"; sourceTree = "<group>"; };
-		58FC52C05336C1661D5B431D7897443E /* BLUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BLUtil.framework; path = BLUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F05795759DC91E053FA31BB1D841757 /* Pods-BLUtil_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BLUtil_Example.modulemap"; sourceTree = "<group>"; };
-		5F300470AF511E8437D74EFE4A3A24DD /* BLLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLLabel.swift; sourceTree = "<group>"; };
-		69AB7B41D3A57BA8D56E1C72034674BF /* BLUtil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLUtil-prefix.pch"; sourceTree = "<group>"; };
-		6CD4BF99D8DDC9F1B1D9DCF405BB2C01 /* Pods-BLUtil_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLUtil_Example-dummy.m"; sourceTree = "<group>"; };
-		71464A84B59608586361DFA7F6B5F8DA /* UILabel+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+BLExt.swift"; sourceTree = "<group>"; };
-		722848A00063CECF61520343E2BE8040 /* BLUtil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BLUtil-dummy.m"; sourceTree = "<group>"; };
-		74E404AA6957590324067E330E0EC533 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8192B38853D70FB483795B4413279377 /* Color+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Color+BLExt.swift"; sourceTree = "<group>"; };
-		844A4A828FE60E838E7264FAAAC1DAD9 /* UIView+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+BLExt.swift"; sourceTree = "<group>"; };
-		862844E754D03598759FFF423A1C4A76 /* String+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+BLExt.swift"; sourceTree = "<group>"; };
-		8E013A1D2AF98736DC1AFF5EE31AA6A0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9A86AE2BF0BCA5639E28F17BC741862E /* Pods-BLUtil_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLUtil_Example-Info.plist"; sourceTree = "<group>"; };
-		A19FA4F67362C867CA700F83ED446F82 /* Pods-BLUtil_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLUtil_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A868CEC00CC56504F7B7F405D56EA7DE /* UIButton+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+BLExt.swift"; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B6CFFE7BB67BB9633746D801ADF66880 /* BLUtil.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BLUtil.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C7F387F86C7EDD051987364315C22FDC /* BLValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLValue.swift; sourceTree = "<group>"; };
-		D005DBB2B0E0299B2AB6AF46216511AC /* UITapGestureRecognizer+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+BLExt.swift"; sourceTree = "<group>"; };
-		D438973071CA2C0DE8C0EA96A3CBA67C /* BLUtil.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BLUtil.xcconfig; sourceTree = "<group>"; };
-		D479E556540FBD11D7D971C1FABF86A0 /* BLUtil.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BLUtil.modulemap; sourceTree = "<group>"; };
-		DF53CE63723E8E5C2FF756B63F133B15 /* UIImage+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+BLExt.swift"; sourceTree = "<group>"; };
-		E80013A7116A4DDFEFAD7AFABBE1B732 /* Pods-BLUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		EE4869B68ACD6EC19C49CB63D86C236F /* Date+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+BLExt.swift"; sourceTree = "<group>"; };
-		FACF9FB959378BB0CE52F6F515AAC9ED /* Pods-BLUtil_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLUtil_Example-umbrella.h"; sourceTree = "<group>"; };
-		FF49F4428BB0E9FDAF655BB28AC3ACB3 /* BLUtil-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BLUtil-Info.plist"; sourceTree = "<group>"; };
-		FFE01946E611576064EBE07452C9503B /* BLUtil-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLUtil-umbrella.h"; sourceTree = "<group>"; };
+		10D854126AF7328FCCAE260BD2A4E0C1 /* Pods_BLUtil_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLUtil_Example.framework; path = "Pods-BLUtil_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1208A36CE1613650034C14CA20594969 /* Pods-BLUtil_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLUtil_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		14192EBEE3D931D1B82834D062A0B208 /* UIImage+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+BLExt.swift"; sourceTree = "<group>"; };
+		18161AB40458B6C2B653C4FE13C84862 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		29431BA5257202A5073D516D67832CAF /* BLUtil-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BLUtil-Info.plist"; sourceTree = "<group>"; };
+		3013E8A8A66F4DC8BB9F1959DF9C9C99 /* Pods-BLUtil_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLUtil_Example.release.xcconfig"; sourceTree = "<group>"; };
+		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		333A8C420477BF349E6FE875CF99C4D2 /* Pods-BLUtil_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLUtil_Example-umbrella.h"; sourceTree = "<group>"; };
+		37DF0DF918C0168F2200769BDECC34E5 /* BLRegular.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLRegular.swift; sourceTree = "<group>"; };
+		3FE96683DB2A5F899AAD5CC5C98E1A6C /* BLValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLValue.swift; sourceTree = "<group>"; };
+		40545CA4956A2E7DD04D71A49FD8646E /* BLUtil-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BLUtil-dummy.m"; sourceTree = "<group>"; };
+		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4D7FA9AB8D6813502FD58D7BBC08247D /* Date+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+BLExt.swift"; sourceTree = "<group>"; };
+		68C75C5CC2049B9E7FF7D9FC71F52343 /* Array+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+BLExt.swift"; sourceTree = "<group>"; };
+		6F23B183E75926279FF4D01316F09AAC /* UIButton+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+BLExt.swift"; sourceTree = "<group>"; };
+		751EDE225A42970FA613255A743F41C0 /* BLTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLTextView.swift; sourceTree = "<group>"; };
+		77743CC1AC5175AA3040182BF01C3F90 /* BLLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLLabel.swift; sourceTree = "<group>"; };
+		784DB7DAF923766FFF37AEBFA80A5A1F /* UIControl+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIControl+BLExt.swift"; sourceTree = "<group>"; };
+		7878DC7A458363FFA26AD8E6D02AE5F0 /* UITapGestureRecognizer+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+BLExt.swift"; sourceTree = "<group>"; };
+		7CE1CD7C8AFF1F40B219942AE18B9197 /* BLUtil-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLUtil-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1187D5EF872B848B0E4EA35B784EF1E /* BLUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BLUtil.swift; sourceTree = "<group>"; };
+		A34406732A3074823BF925600C16C93E /* Pods-BLUtil_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BLUtil_Example.modulemap"; sourceTree = "<group>"; };
+		A3F79FCD0A264B55B6EDCFDD927C58E6 /* BLUtil.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BLUtil.framework; path = BLUtil.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A753CB54A023F30A081DB3ED5CB43E53 /* UILabel+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+BLExt.swift"; sourceTree = "<group>"; };
+		ADE395AE9B0297C2FC290B67DFE2EF00 /* Pods-BLUtil_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLUtil_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B7C053EB5C513AB23A764B8B155B58A8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C10AA9CFB94E199B111203D52D017469 /* BLUtil.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BLUtil.modulemap; sourceTree = "<group>"; };
+		C1E4CBDB57BD2D9CDFFB0F0D864CC4E3 /* Pods-BLUtil_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLUtil_Example-dummy.m"; sourceTree = "<group>"; };
+		C299171A6969A0D8C874B1BABF80667F /* UIView+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+BLExt.swift"; sourceTree = "<group>"; };
+		C3FD7734C9419F2CA118BE44B9209543 /* BLUtil.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BLUtil.debug.xcconfig; sourceTree = "<group>"; };
+		CA633D1EC0384209DA11BE3A1C0EBCA7 /* Pods-BLUtil_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLUtil_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D12A4CB75408DB4ACEA5E5F4BC90679B /* Color+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Color+BLExt.swift"; sourceTree = "<group>"; };
+		D3F70127AB0E3F90FC651444F7F233D2 /* Dictionary+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Dictionary+BLExt.swift"; sourceTree = "<group>"; };
+		D60A3BD6D0CDF406CA4C1C111A1CC43A /* BLUtil.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BLUtil.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DA414598BE44DF3A6433AA1DD13E3AB3 /* UITextField+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextField+BLExt.swift"; sourceTree = "<group>"; };
+		DDE07757B51FAC7D1CEA6565DA0311BD /* Pods-BLUtil_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLUtil_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E0DE324A772A9FD436EAB0DCF40AE2E9 /* Pods-BLUtil_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLUtil_Example-Info.plist"; sourceTree = "<group>"; };
+		E47EC90F321D1DEEAB30FD60E2B47EE7 /* String+BLExt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+BLExt.swift"; sourceTree = "<group>"; };
+		E5D303394145958B67E1F61D2F038A03 /* BLUtil-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLUtil-umbrella.h"; sourceTree = "<group>"; };
+		F40FC4F5EF45DEFFAE693413686FE797 /* BLUtil.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BLUtil.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		02D525BA0383ADAEE0D442B4D6F71866 /* Frameworks */ = {
+		B6FDB8B915DA2EA95E1FB41B0F564A5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A12C00587E4671C72A18F6647C35728 /* Foundation.framework in Frameworks */,
-				2F92F498BB69A1AC1BB3FE2AE513165E /* UIKit.framework in Frameworks */,
+				E517A82BF44A3D91167B99989DC62D80 /* Foundation.framework in Frameworks */,
+				1EE94940A1CCBE5EBC2A6DC74C46C21D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4AB0AAE68716A6D9DD0915DC59633D74 /* Frameworks */ = {
+		C30996B5C5D6FF268343C730CF6AE281 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7D3DD9ABFAC92B8C247DDBDE548A75E /* Foundation.framework in Frameworks */,
+				2246B1036C372A3D9B2704AC4E0035D6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		06CDD10DE71306278CF89108B3036DFD /* iOS */ = {
+		0ECBAAF1F75F97C0553347777D315435 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				2EFB40531CB700ADF867FEEE78561E78 /* Foundation.framework */,
-				74E404AA6957590324067E330E0EC533 /* UIKit.framework */,
+				D60A3BD6D0CDF406CA4C1C111A1CC43A /* BLUtil.podspec */,
+				18161AB40458B6C2B653C4FE13C84862 /* LICENSE */,
+				B7C053EB5C513AB23A764B8B155B58A8 /* README.md */,
 			);
-			name = iOS;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		3551AACB127548CB126A6C8190DD6B6D /* Products */ = {
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				58FC52C05336C1661D5B431D7897443E /* BLUtil.framework */,
-				421966C2E2E3BFDFCBD7ED207B8B90ED /* Pods_BLUtil_Example.framework */,
+				E2983683FD097A93297E2F5D4E382B36 /* iOS */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3FC1736A59C07DE31577A21AA529ABBF /* BLClass */ = {
+		18BD8C6487553DD9B057D3CD230409C7 /* BLClass */ = {
 			isa = PBXGroup;
 			children = (
-				5F300470AF511E8437D74EFE4A3A24DD /* BLLabel.swift */,
-				2248703010A6DB799DA6071FD6E1ADBE /* BLRegular.swift */,
-				3A2118C6B08D4FE06A817EF1864EA4E9 /* BLTextView.swift */,
-				4F66A3A2DBD0860D3B418FACA6AB2D89 /* BLUtil.swift */,
-				C7F387F86C7EDD051987364315C22FDC /* BLValue.swift */,
+				77743CC1AC5175AA3040182BF01C3F90 /* BLLabel.swift */,
+				37DF0DF918C0168F2200769BDECC34E5 /* BLRegular.swift */,
+				751EDE225A42970FA613255A743F41C0 /* BLTextView.swift */,
+				A1187D5EF872B848B0E4EA35B784EF1E /* BLUtil.swift */,
+				3FE96683DB2A5F899AAD5CC5C98E1A6C /* BLValue.swift */,
 			);
 			name = BLClass;
 			path = BLUtil/Classes/BLClass;
 			sourceTree = "<group>";
 		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+		2ACAED21C87D88862D963D1F33CF3E9E /* Pods-BLUtil_Example */ = {
 			isa = PBXGroup;
 			children = (
-				06CDD10DE71306278CF89108B3036DFD /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4BB2A0E5FEC6761877BFD01B17D4919D /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				442C39ECAC494E4AC94652835A388A55 /* Array+BLExt.swift */,
-				8192B38853D70FB483795B4413279377 /* Color+BLExt.swift */,
-				EE4869B68ACD6EC19C49CB63D86C236F /* Date+BLExt.swift */,
-				13EF5608CD7AC3532C0D7BF251247FD0 /* Dictionary+BLExt.swift */,
-				862844E754D03598759FFF423A1C4A76 /* String+BLExt.swift */,
-			);
-			name = Foundation;
-			path = BLUtil/Classes/Foundation;
-			sourceTree = "<group>";
-		};
-		5E8C9EB301BB39CDFC89B3B5C8C53205 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D479E556540FBD11D7D971C1FABF86A0 /* BLUtil.modulemap */,
-				D438973071CA2C0DE8C0EA96A3CBA67C /* BLUtil.xcconfig */,
-				722848A00063CECF61520343E2BE8040 /* BLUtil-dummy.m */,
-				FF49F4428BB0E9FDAF655BB28AC3ACB3 /* BLUtil-Info.plist */,
-				69AB7B41D3A57BA8D56E1C72034674BF /* BLUtil-prefix.pch */,
-				FFE01946E611576064EBE07452C9503B /* BLUtil-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/BLUtil";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
-				9E82273A25B8E2A89FC78D3CB490EAC2 /* Development Pods */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				3551AACB127548CB126A6C8190DD6B6D /* Products */,
-				8BF3ABE0ED19E401C879CB0DA7DA821A /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		87720784A19A0993EF61782C51D6E95A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B6CFFE7BB67BB9633746D801ADF66880 /* BLUtil.podspec */,
-				8E013A1D2AF98736DC1AFF5EE31AA6A0 /* LICENSE */,
-				2C026D38BF59F27C24189BB877F131FE /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		87899144B426B0E2AC3F1B9E987C6504 /* Pods-BLUtil_Example */ = {
-			isa = PBXGroup;
-			children = (
-				5F05795759DC91E053FA31BB1D841757 /* Pods-BLUtil_Example.modulemap */,
-				A19FA4F67362C867CA700F83ED446F82 /* Pods-BLUtil_Example-acknowledgements.markdown */,
-				249F58F2F497805ADA9492B85A99DC3A /* Pods-BLUtil_Example-acknowledgements.plist */,
-				6CD4BF99D8DDC9F1B1D9DCF405BB2C01 /* Pods-BLUtil_Example-dummy.m */,
-				03B4A509B64C412BC6A57DCEDFE9EDCE /* Pods-BLUtil_Example-frameworks.sh */,
-				9A86AE2BF0BCA5639E28F17BC741862E /* Pods-BLUtil_Example-Info.plist */,
-				FACF9FB959378BB0CE52F6F515AAC9ED /* Pods-BLUtil_Example-umbrella.h */,
-				E80013A7116A4DDFEFAD7AFABBE1B732 /* Pods-BLUtil_Example.debug.xcconfig */,
-				35FAD6A9D531DF911C3FEEBD68F3519F /* Pods-BLUtil_Example.release.xcconfig */,
+				A34406732A3074823BF925600C16C93E /* Pods-BLUtil_Example.modulemap */,
+				CA633D1EC0384209DA11BE3A1C0EBCA7 /* Pods-BLUtil_Example-acknowledgements.markdown */,
+				1208A36CE1613650034C14CA20594969 /* Pods-BLUtil_Example-acknowledgements.plist */,
+				C1E4CBDB57BD2D9CDFFB0F0D864CC4E3 /* Pods-BLUtil_Example-dummy.m */,
+				DDE07757B51FAC7D1CEA6565DA0311BD /* Pods-BLUtil_Example-frameworks.sh */,
+				E0DE324A772A9FD436EAB0DCF40AE2E9 /* Pods-BLUtil_Example-Info.plist */,
+				333A8C420477BF349E6FE875CF99C4D2 /* Pods-BLUtil_Example-umbrella.h */,
+				ADE395AE9B0297C2FC290B67DFE2EF00 /* Pods-BLUtil_Example.debug.xcconfig */,
+				3013E8A8A66F4DC8BB9F1959DF9C9C99 /* Pods-BLUtil_Example.release.xcconfig */,
 			);
 			name = "Pods-BLUtil_Example";
 			path = "Target Support Files/Pods-BLUtil_Example";
 			sourceTree = "<group>";
 		};
-		8BF3ABE0ED19E401C879CB0DA7DA821A /* Targets Support Files */ = {
+		4B338F8E66ECA871DB615F816782AAD0 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				87899144B426B0E2AC3F1B9E987C6504 /* Pods-BLUtil_Example */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		9E82273A25B8E2A89FC78D3CB490EAC2 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BE7E18713AB89DDD6F4ADE29523FC0D7 /* BLUtil */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		BE7E18713AB89DDD6F4ADE29523FC0D7 /* BLUtil */ = {
-			isa = PBXGroup;
-			children = (
-				3FC1736A59C07DE31577A21AA529ABBF /* BLClass */,
-				4BB2A0E5FEC6761877BFD01B17D4919D /* Foundation */,
-				87720784A19A0993EF61782C51D6E95A /* Pod */,
-				5E8C9EB301BB39CDFC89B3B5C8C53205 /* Support Files */,
-				D18619B8878E71B7477DFF394A060B19 /* UIKit */,
-			);
-			name = BLUtil;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		D18619B8878E71B7477DFF394A060B19 /* UIKit */ = {
-			isa = PBXGroup;
-			children = (
-				A868CEC00CC56504F7B7F405D56EA7DE /* UIButton+BLExt.swift */,
-				DF53CE63723E8E5C2FF756B63F133B15 /* UIImage+BLExt.swift */,
-				71464A84B59608586361DFA7F6B5F8DA /* UILabel+BLExt.swift */,
-				D005DBB2B0E0299B2AB6AF46216511AC /* UITapGestureRecognizer+BLExt.swift */,
-				569240AC20D40FC57570F2B4213E90CC /* UITextField+BLExt.swift */,
-				844A4A828FE60E838E7264FAAAC1DAD9 /* UIView+BLExt.swift */,
+				6F23B183E75926279FF4D01316F09AAC /* UIButton+BLExt.swift */,
+				784DB7DAF923766FFF37AEBFA80A5A1F /* UIControl+BLExt.swift */,
+				14192EBEE3D931D1B82834D062A0B208 /* UIImage+BLExt.swift */,
+				A753CB54A023F30A081DB3ED5CB43E53 /* UILabel+BLExt.swift */,
+				7878DC7A458363FFA26AD8E6D02AE5F0 /* UITapGestureRecognizer+BLExt.swift */,
+				DA414598BE44DF3A6433AA1DD13E3AB3 /* UITextField+BLExt.swift */,
+				C299171A6969A0D8C874B1BABF80667F /* UIView+BLExt.swift */,
 			);
 			name = UIKit;
 			path = BLUtil/Classes/UIKit;
 			sourceTree = "<group>";
 		};
+		51107DE341A30A2016105CE0141806C0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C10AA9CFB94E199B111203D52D017469 /* BLUtil.modulemap */,
+				40545CA4956A2E7DD04D71A49FD8646E /* BLUtil-dummy.m */,
+				29431BA5257202A5073D516D67832CAF /* BLUtil-Info.plist */,
+				7CE1CD7C8AFF1F40B219942AE18B9197 /* BLUtil-prefix.pch */,
+				E5D303394145958B67E1F61D2F038A03 /* BLUtil-umbrella.h */,
+				C3FD7734C9419F2CA118BE44B9209543 /* BLUtil.debug.xcconfig */,
+				F40FC4F5EF45DEFFAE693413686FE797 /* BLUtil.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/BLUtil";
+			sourceTree = "<group>";
+		};
+		B472523CA32566E7841FCDC510AD4C3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3F79FCD0A264B55B6EDCFDD927C58E6 /* BLUtil.framework */,
+				10D854126AF7328FCCAE260BD2A4E0C1 /* Pods_BLUtil_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB02EA9E5B8FF78B32D009A74160C53E /* BLUtil */ = {
+			isa = PBXGroup;
+			children = (
+				18BD8C6487553DD9B057D3CD230409C7 /* BLClass */,
+				F274A5CE0E4CA208E85EAC269BDF59B4 /* Foundation */,
+				0ECBAAF1F75F97C0553347777D315435 /* Pod */,
+				51107DE341A30A2016105CE0141806C0 /* Support Files */,
+				4B338F8E66ECA871DB615F816782AAD0 /* UIKit */,
+			);
+			name = BLUtil;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C096363994952FEE86937176C319D639 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB02EA9E5B8FF78B32D009A74160C53E /* BLUtil */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				C096363994952FEE86937176C319D639 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				B472523CA32566E7841FCDC510AD4C3D /* Products */,
+				FADB08120C82E4138DF2747437036457 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E2983683FD097A93297E2F5D4E382B36 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */,
+				312B988EF117AE4DE76A268D970131FE /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F274A5CE0E4CA208E85EAC269BDF59B4 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				68C75C5CC2049B9E7FF7D9FC71F52343 /* Array+BLExt.swift */,
+				D12A4CB75408DB4ACEA5E5F4BC90679B /* Color+BLExt.swift */,
+				4D7FA9AB8D6813502FD58D7BBC08247D /* Date+BLExt.swift */,
+				D3F70127AB0E3F90FC651444F7F233D2 /* Dictionary+BLExt.swift */,
+				E47EC90F321D1DEEAB30FD60E2B47EE7 /* String+BLExt.swift */,
+			);
+			name = Foundation;
+			path = BLUtil/Classes/Foundation;
+			sourceTree = "<group>";
+		};
+		FADB08120C82E4138DF2747437036457 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2ACAED21C87D88862D963D1F33CF3E9E /* Pods-BLUtil_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0197945B8CD5CC551861CD408882F5F5 /* Headers */ = {
+		8091072BCCC9184E5DFCA2FFAB26EFB4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045E3CA64C6A7DCCE29941CA0A648B65 /* BLUtil-umbrella.h in Headers */,
+				04101D3D48B3C9E656469F4A9776D5ED /* Pods-BLUtil_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B30BA7B77117624CF79033A52E10941C /* Headers */ = {
+		FA0D45D071B81F2431A8B08C508F4ED9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EB401D638D87388D5D2BEB64A93F9E0 /* Pods-BLUtil_Example-umbrella.h in Headers */,
+				E62A86CC85DDC46A99E4AF67E45BB901 /* BLUtil-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		12F69AE5C3B48B8B95C16A4F8FE0905A /* BLUtil */ = {
+		1B266FE3E31492E80867713BF2A5D150 /* BLUtil */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4F87FAB223371BBF62E4C93AB1B7CEE /* Build configuration list for PBXNativeTarget "BLUtil" */;
+			buildConfigurationList = 47A10878CF21ED068511280CCABBE680 /* Build configuration list for PBXNativeTarget "BLUtil" */;
 			buildPhases = (
-				0197945B8CD5CC551861CD408882F5F5 /* Headers */,
-				1453C14AE6EB29E02226F9BC4219512C /* Sources */,
-				02D525BA0383ADAEE0D442B4D6F71866 /* Frameworks */,
-				5E391361B70CC42A0AA4D345F699317C /* Resources */,
+				FA0D45D071B81F2431A8B08C508F4ED9 /* Headers */,
+				374FA2F1FF696DA3926B8BEE44D9AE2A /* Sources */,
+				B6FDB8B915DA2EA95E1FB41B0F564A5C /* Frameworks */,
+				28F98AA020E0D05A7E56B5F55D462D29 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -289,64 +294,65 @@
 			);
 			name = BLUtil;
 			productName = BLUtil;
-			productReference = 58FC52C05336C1661D5B431D7897443E /* BLUtil.framework */;
+			productReference = A3F79FCD0A264B55B6EDCFDD927C58E6 /* BLUtil.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3863DB11B228DF55ED56D4FF2F191207 /* Pods-BLUtil_Example */ = {
+		DFD0C5FC8FB6190E6559B992DFA9583F /* Pods-BLUtil_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 022C0F8BD659E728A6977E91C2906332 /* Build configuration list for PBXNativeTarget "Pods-BLUtil_Example" */;
+			buildConfigurationList = 9C773EB5E1B4A3F7B6CAC2CB8170341B /* Build configuration list for PBXNativeTarget "Pods-BLUtil_Example" */;
 			buildPhases = (
-				B30BA7B77117624CF79033A52E10941C /* Headers */,
-				565F5033642D6C963BEF00CC4440EFAE /* Sources */,
-				4AB0AAE68716A6D9DD0915DC59633D74 /* Frameworks */,
-				06ED0C49451411D486300C69B2A6D3FA /* Resources */,
+				8091072BCCC9184E5DFCA2FFAB26EFB4 /* Headers */,
+				A1FB976967D0DD520509FF3A6BA406C5 /* Sources */,
+				C30996B5C5D6FF268343C730CF6AE281 /* Frameworks */,
+				01DE4F0D3CB3FF3082F8F2B0C7024AF5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				19CBDF7E5A8BFDC5AD3FA068F90A9D06 /* PBXTargetDependency */,
+				C34298CCAD6CDA511A8016C390A727C6 /* PBXTargetDependency */,
 			);
 			name = "Pods-BLUtil_Example";
 			productName = "Pods-BLUtil_Example";
-			productReference = 421966C2E2E3BFDFCBD7ED207B8B90ED /* Pods_BLUtil_Example.framework */;
+			productReference = 10D854126AF7328FCCAE260BD2A4E0C1 /* Pods_BLUtil_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3551AACB127548CB126A6C8190DD6B6D /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B472523CA32566E7841FCDC510AD4C3D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				12F69AE5C3B48B8B95C16A4F8FE0905A /* BLUtil */,
-				3863DB11B228DF55ED56D4FF2F191207 /* Pods-BLUtil_Example */,
+				1B266FE3E31492E80867713BF2A5D150 /* BLUtil */,
+				DFD0C5FC8FB6190E6559B992DFA9583F /* Pods-BLUtil_Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		06ED0C49451411D486300C69B2A6D3FA /* Resources */ = {
+		01DE4F0D3CB3FF3082F8F2B0C7024AF5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E391361B70CC42A0AA4D345F699317C /* Resources */ = {
+		28F98AA020E0D05A7E56B5F55D462D29 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -356,118 +362,54 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1453C14AE6EB29E02226F9BC4219512C /* Sources */ = {
+		374FA2F1FF696DA3926B8BEE44D9AE2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CED00F5B4122E2F29E957A5D5B99EAC /* Array+BLExt.swift in Sources */,
-				93F2A49F0B16E3B40A5B955DE1305AFE /* BLLabel.swift in Sources */,
-				DC2F9F768050D5C51FB6E6C645D5A263 /* BLRegular.swift in Sources */,
-				213CA95271E3DFA539519017DAC44B11 /* BLTextView.swift in Sources */,
-				63CED096F6F07AC0C297936BA2220430 /* BLUtil-dummy.m in Sources */,
-				E89D2353FD69D01FCB3FCEF902B7214E /* BLUtil.swift in Sources */,
-				CD885A1F6462D3CD4083B836EAC73B8C /* BLValue.swift in Sources */,
-				1681D27C3BAC7442A2E04D455F4DAA99 /* Color+BLExt.swift in Sources */,
-				DBDB6836053A802D75C02EA91CF958F4 /* Date+BLExt.swift in Sources */,
-				04F9B8B3EE600D040B6D9BD525B6D3E6 /* Dictionary+BLExt.swift in Sources */,
-				9D5CC0AB6607F3CC5486DD343935CFED /* String+BLExt.swift in Sources */,
-				E70B4C7D6C253B5DEFC7A8DFB571EC40 /* UIButton+BLExt.swift in Sources */,
-				DC0469234A906C376BC0D9D76610E241 /* UIImage+BLExt.swift in Sources */,
-				5644116760CD88C1F9753718C21A1280 /* UILabel+BLExt.swift in Sources */,
-				E40DCA8845BA988FEC232D7317A93A66 /* UITapGestureRecognizer+BLExt.swift in Sources */,
-				3069947CE5C1B07484BDF5EEAB318DD8 /* UITextField+BLExt.swift in Sources */,
-				EA687E1FE4E08FFB6C053D93C8E59554 /* UIView+BLExt.swift in Sources */,
+				7D5944AA50356CF1F5818E632F079FDE /* Array+BLExt.swift in Sources */,
+				BA950D4282DA9CC8D3917B09371D1811 /* BLLabel.swift in Sources */,
+				969BC4F2CF6E1E1AE219AF1020FA2F9D /* BLRegular.swift in Sources */,
+				E27778EA15BEDD06C420C6BEB486A98F /* BLTextView.swift in Sources */,
+				64C9BD6D96BABCB1044456EA4C29FD3D /* BLUtil-dummy.m in Sources */,
+				57A343A5EB0734EDCAFBE30D21ED3519 /* BLUtil.swift in Sources */,
+				FFF73D4354BFEDD967A8441D995A063D /* BLValue.swift in Sources */,
+				78C6044618D271BDFF402AD34D3AEFAC /* Color+BLExt.swift in Sources */,
+				DFC11E241C0B12DC0AA58B5947A99C95 /* Date+BLExt.swift in Sources */,
+				F19AEDCBB34EA4C3A600E2DE481B52D6 /* Dictionary+BLExt.swift in Sources */,
+				963887EDDC42681B26C5F6C0D7DEEE3C /* String+BLExt.swift in Sources */,
+				4A91996293F87EF29E30253F40CA2A12 /* UIButton+BLExt.swift in Sources */,
+				45A34477464AA504F44EA26CC052E343 /* UIControl+BLExt.swift in Sources */,
+				AE8CEA2A16B5C91500E643561D6368F5 /* UIImage+BLExt.swift in Sources */,
+				141641A1BDD3084F1FADC9311B05F312 /* UILabel+BLExt.swift in Sources */,
+				F937389755247CD38113492511E2D5F8 /* UITapGestureRecognizer+BLExt.swift in Sources */,
+				3477169285644F3C37CA4B55AFDE9A1D /* UITextField+BLExt.swift in Sources */,
+				1F624868518FED6ABBDFECCCCAF213A2 /* UIView+BLExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		565F5033642D6C963BEF00CC4440EFAE /* Sources */ = {
+		A1FB976967D0DD520509FF3A6BA406C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A85D06FEFEA32DD35683DB3CD7C41C /* Pods-BLUtil_Example-dummy.m in Sources */,
+				7C1E9DDBA0BBA97F4B3A1FFC4CC527C1 /* Pods-BLUtil_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		19CBDF7E5A8BFDC5AD3FA068F90A9D06 /* PBXTargetDependency */ = {
+		C34298CCAD6CDA511A8016C390A727C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BLUtil;
-			target = 12F69AE5C3B48B8B95C16A4F8FE0905A /* BLUtil */;
-			targetProxy = D6B908720AD06292F0D9080DEA1D1754 /* PBXContainerItemProxy */;
+			target = 1B266FE3E31492E80867713BF2A5D150 /* BLUtil */;
+			targetProxy = CBD06F62B97CEC8B4BD20BCB36E7CDA6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		299E01E9A2D00BDAA0850EBD578A3EB9 /* Release */ = {
+		10766AC05AC39D3BDA0D228FE111DE44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D438973071CA2C0DE8C0EA96A3CBA67C /* BLUtil.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BLUtil/BLUtil-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BLUtil/BLUtil-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BLUtil/BLUtil.modulemap";
-				PRODUCT_MODULE_NAME = BLUtil;
-				PRODUCT_NAME = BLUtil;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		36AF9E7B2108BC13CD08B0F3A84A2F25 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E80013A7116A4DDFEFAD7AFABBE1B732 /* Pods-BLUtil_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-BLUtil_Example/Pods-BLUtil_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-BLUtil_Example/Pods-BLUtil_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5CA0CE045B678CE301025710EF65B211 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 35FAD6A9D531DF911C3FEEBD68F3519F /* Pods-BLUtil_Example.release.xcconfig */;
+			baseConfigurationReference = 3013E8A8A66F4DC8BB9F1959DF9C9C99 /* Pods-BLUtil_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -499,7 +441,7 @@
 			};
 			name = Release;
 		};
-		BE01AF5D395AE305A54D518A9B774D2A /* Release */ = {
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -554,12 +496,75 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */ = {
+		699BCFD30CD3EE558A33738F59F5A6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F40FC4F5EF45DEFFAE693413686FE797 /* BLUtil.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BLUtil/BLUtil-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BLUtil/BLUtil-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BLUtil/BLUtil.modulemap";
+				PRODUCT_MODULE_NAME = BLUtil;
+				PRODUCT_NAME = BLUtil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6B9F22E7B935A24F18EC30796FBD7C81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3FD7734C9419F2CA118BE44B9209543 /* BLUtil.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BLUtil/BLUtil-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BLUtil/BLUtil-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BLUtil/BLUtil.modulemap";
+				PRODUCT_MODULE_NAME = BLUtil;
+				PRODUCT_NAME = BLUtil;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -618,15 +623,16 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		EB2A44E55E3F667E1ABF9182D4030B7F /* Debug */ = {
+		80DE917D3459FC5E91D57A765C33DAC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D438973071CA2C0DE8C0EA96A3CBA67C /* BLUtil.xcconfig */;
+			baseConfigurationReference = ADE395AE9B0297C2FC290B67DFE2EF00 /* Pods-BLUtil_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -636,18 +642,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BLUtil/BLUtil-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BLUtil/BLUtil-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-BLUtil_Example/Pods-BLUtil_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BLUtil/BLUtil.modulemap";
-				PRODUCT_MODULE_NAME = BLUtil;
-				PRODUCT_NAME = BLUtil;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BLUtil_Example/Pods-BLUtil_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -657,34 +664,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		022C0F8BD659E728A6977E91C2906332 /* Build configuration list for PBXNativeTarget "Pods-BLUtil_Example" */ = {
+		47A10878CF21ED068511280CCABBE680 /* Build configuration list for PBXNativeTarget "BLUtil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				36AF9E7B2108BC13CD08B0F3A84A2F25 /* Debug */,
-				5CA0CE045B678CE301025710EF65B211 /* Release */,
+				6B9F22E7B935A24F18EC30796FBD7C81 /* Debug */,
+				699BCFD30CD3EE558A33738F59F5A6BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */,
-				BE01AF5D395AE305A54D518A9B774D2A /* Release */,
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4F87FAB223371BBF62E4C93AB1B7CEE /* Build configuration list for PBXNativeTarget "BLUtil" */ = {
+		9C773EB5E1B4A3F7B6CAC2CB8170341B /* Build configuration list for PBXNativeTarget "Pods-BLUtil_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB2A44E55E3F667E1ABF9182D4030B7F /* Debug */,
-				299E01E9A2D00BDAA0850EBD578A3EB9 /* Release */,
+				80DE917D3459FC5E91D57A765C33DAC7 /* Debug */,
+				10766AC05AC39D3BDA0D228FE111DE44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

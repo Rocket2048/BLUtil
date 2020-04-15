@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        BLLabel().text = "1"
+//        BLLabel().text = "1"
         
         
         print(BLUtil.md5("1"))
