@@ -8,7 +8,8 @@
 
 import UIKit
 
-extension UIImage{
+// MARK: 初始化
+extension UIImage {
     
     /// 根据view 生成image
     public convenience init?(view: UIView) {
@@ -45,10 +46,11 @@ extension UIImage{
     }
 }
 
+// MARK: 方法
 extension UIImage {
     
     /// 将图片绘制成指定大小
-    public static func scaleTo(image: UIImage, w: CGFloat, h: CGFloat) -> UIImage {
+    public class func scaleTo(image: UIImage, w: CGFloat, h: CGFloat) -> UIImage {
         
         let newSize = CGSize(width: w, height: h)
         UIGraphicsBeginImageContextWithOptions(newSize, false, 0.0)
@@ -59,19 +61,19 @@ extension UIImage {
     }
     
     /// 使用颜色覆盖image
-    public static func withColor(color:UIColor) -> UIImage {
+    public class func withColor(color: UIColor) -> UIImage {
         
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
-        UIGraphicsBeginImageContext(rect.size);
+        UIGraphicsBeginImageContext(rect.size)
         let context = UIGraphicsGetCurrentContext()
         
-        context!.setFillColor(color.cgColor);
+        context!.setFillColor(color.cgColor)
         context!.fill(rect)
         
         let newImage: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
-        return newImage;
+        return newImage
     }
     
     /// 截取指定Image的rect
@@ -82,8 +84,8 @@ extension UIImage {
         return UIImage(cgImage: image)
     }
     
-   /// view生成指定大小的图片
-   public func withView(view:UIView ,size:CGSize) -> UIImage {
+    /// view生成指定大小的图片
+    public func withView(view: UIView, size: CGSize) -> UIImage {
         
         UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
         view.layer.render(in: UIGraphicsGetCurrentContext()!)
@@ -97,7 +99,7 @@ extension UIImage {
     /// 压缩图片
     public func compressedData(quality: CGFloat = 0.5) -> Data? {
         
-        return UIImageJPEGRepresentation(self, quality)
+        return self.jpegData(compressionQuality: quality)
     }
     
     /// 旋转指定角度
@@ -163,5 +165,5 @@ extension UIImage {
             logo?.draw(in: CGRect(x: (imageRect.size.width - logoSize.width) / 2, y: (imageRect.size.height - logoSize.height) / 2, width: logoSize.width, height: logoSize.height))
         }
         return UIGraphicsGetImageFromCurrentImageContext()
-    } 
+    }
 }

@@ -147,6 +147,3 @@ public class BLUtil {
         return type
     }
 }
-
-
-

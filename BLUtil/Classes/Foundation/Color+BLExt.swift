@@ -9,19 +9,19 @@
 import UIKit
 
 /// RGBA
-public func RGBA(r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat) ->UIColor{
+public func RGBA(r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat) -> UIColor {
     
-    return UIColor(red: r/225.0, green: g/225.0, blue: b/225.0, alpha: a)
+    return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
 }
 
 /// RGB
-public func RGB(r:CGFloat,g:CGFloat,b:CGFloat) ->UIColor{
+public func RGB(r: CGFloat, g: CGFloat, b: CGFloat) -> UIColor {
     
-    return UIColor(red: r/225.0, green: g/225.0, blue: b/225.0, alpha: 1.0)
+    return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: 1.0)
 }
 
 /// 随机色
-public func randomColor() ->  UIColor{
+public func randomColor() -> UIColor {
     
     let r = Int(arc4random_uniform(255))
     let g = Int(arc4random_uniform(255))
@@ -31,20 +31,20 @@ public func randomColor() ->  UIColor{
 
 extension UIColor {
     
-    /// 随机色
+    ///随机色
     public static func random(randomAlpha: Bool = false) -> UIColor {
         
-        let randomRed = arc4random()%255
-        let randomGreen = arc4random()%255
-        let randomBlue = arc4random()%255
-        let alpha = randomAlpha ? arc4random()%255 : 1
+        let randomRed = arc4random() % 255
+        let randomGreen = arc4random() % 255
+        let randomBlue = arc4random() % 255
+        let alpha = randomAlpha ? arc4random() % 255 : 1
         return RGBA(CGFloat(randomRed), CGFloat(randomGreen), CGFloat(randomBlue), CGFloat(alpha))
     }
-    
+
     /// rgba
     public static func RGBA(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat, _ a: CGFloat) -> UIColor {
         
-        return UIColor(red: r/255, green: g/255, blue: b/255, alpha: a)
+        return UIColor(red: r / 255, green: g / 255, blue: b / 255, alpha: a)
     }
     
     /// rgb
@@ -53,7 +53,7 @@ extension UIColor {
         return RGBA(r, g, b, 1.0)
     }
     
-    /// UIColor转化为16进制
+    /// UIColor转化为16进制（UIColor() -> #FFFFFF）
     public var hex: String {
         
         var red: CGFloat = 0
@@ -69,7 +69,7 @@ extension UIColor {
         return String(format: "#%06x", rgb)
     }
     
-    /// 16进制转rgb, 开头 0x 或 #
+    /// 16进制转初始化 (0xffffff 或 #ffffff -> UIColor()?)
     public convenience init?(hexString: String, alpha: CGFloat = 1.0) {
         
         var formatted = hexString.replacingOccurrences(of: "0x", with: "")
@@ -79,7 +79,7 @@ extension UIColor {
             let green = CGFloat(CGFloat((hex & 0x00FF00) >> 8)/255.0)
             let blue = CGFloat(CGFloat((hex & 0x0000FF) >> 0)/255.0)
             self.init(red: red, green: green, blue: blue, alpha: alpha)
-        }else {
+        } else {
             return nil
         }
     }

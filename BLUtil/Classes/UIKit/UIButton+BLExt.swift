@@ -9,17 +9,17 @@
 
 import UIKit
 
-extension UIButton{
+extension UIButton {
     
     /// 设置文字颜色颜色和选中状态颜色
     ///
     /// - Parameters:
     ///   - normolColor: normolColor
     ///   - selectColor: selectColor
-    public func setTitleColor(normolColor:UIColor,selectColor:UIColor) {
+    public func setTitleColor(normolColor: UIColor, selectColor: UIColor) {
         
-        self.setTitleColor(normolColor, for: UIControlState.normal)
-        self.setTitleColor(selectColor, for: UIControlState.selected)
+        self.setTitleColor(normolColor, for: .normal)
+        self.setTitleColor(selectColor, for: .selected)
     }
     
     /// 设置选择状态和未选中状态的image
@@ -27,10 +27,10 @@ extension UIButton{
     /// - Parameters:
     ///   - normolImge: normolImge
     ///   - selectImage: selectImage
-    public func setImage(normolImge:UIImage,selectImage:UIImage) {
+    public func setImage(normolImge: UIImage, selectImage: UIImage) {
         
-        self.setImage(normolImge, for: UIControlState.normal)
-        self.setImage(selectImage, for: UIControlState.selected)
+        self.setImage(normolImge, for: .normal)
+        self.setImage(selectImage, for: .selected)
     }
     
     /// 设置未选择状态的title和color
@@ -38,10 +38,10 @@ extension UIButton{
     /// - Parameters:
     ///   - title: title
     ///   - titleColor: color
-    public func setTitleWithTitleColor(title:String,titleColor:UIColor) {
+    public func setTitleWithTitleColor(title: String, titleColor: UIColor) {
         
-        self.setTitle(title, for: UIControlState.normal)
-        self.setTitleColor(titleColor, for: UIControlState.normal)
+        self.setTitle(title, for: .normal)
+        self.setTitleColor(titleColor, for: .normal)
     }
     
     /// 设置title&image
@@ -49,17 +49,14 @@ extension UIButton{
     /// - Parameters:
     ///   - title: title
     ///   - image: image
-    public func setTitleWithImage(title:String,image:UIImage) {
+    public func setTitleWithImage(title: String, image: UIImage) {
         setImage(image, for: .normal)
         setTitle(title, for: .normal)
     }
 }
 
-fileprivate struct RunTimeButtonKey {
-    
-    /// 连续两次点击相差时间
-    static let timeInterval = UnsafeRawPointer.init(bitPattern: "timeInterval".hashValue)
-    /// 点击区域
+private struct RunTimeButtonKey {
+    ///点击区域
     static let topNameKey = UnsafeRawPointer.init(bitPattern: "topNameKey".hashValue)
     static let rightNameKey = UnsafeRawPointer.init(bitPattern: "rightNameKey".hashValue)
     static let bottomNameKey = UnsafeRawPointer.init(bitPattern: "bottomNameKey".hashValue)
@@ -67,35 +64,6 @@ fileprivate struct RunTimeButtonKey {
 }
 
 extension UIButton {
-    
-    /// 两次点击响应间隔时间
-    public var timeInterval: CGFloat? {
-        set {
-            objc_setAssociatedObject(self, RunTimeButtonKey.timeInterval!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
-            UIButton.changeFunction
-        }
-        get {
-            return  objc_getAssociatedObject(self, RunTimeButtonKey.timeInterval!) as? CGFloat
-        }
-    }
-    
-    private static let changeFunction: () = {
-        
-        //交换方法
-        let systemMethod = class_getInstanceMethod(UIButton.classForCoder(), #selector(UIButton.sendAction(_:to:for:)))
-        let swizzMethod = class_getInstanceMethod(UIButton.classForCoder(), #selector(UIButton.mySendAction(_:to:for:)))
-        method_exchangeImplementations(systemMethod!, swizzMethod!)
-    }()
-    
-    @objc private dynamic func mySendAction(_ action: Selector, to target: Any?, for event: UIEvent?) {
-        
-        self.isUserInteractionEnabled = false
-        let time:TimeInterval = TimeInterval(timeInterval ?? 0.0)
-        DispatchQueue.main.asyncAfter(deadline:.now() + time) {
-            self.isUserInteractionEnabled = true
-        }
-        mySendAction(action, to: target, for: event)
-    }
     
     //=== 扩大点击响应事件 ===
     fileprivate var topEdge: CGFloat? {
@@ -141,7 +109,7 @@ extension UIButton {
     ///   - right: 右
     ///   - bottom: 下
     ///   - left: 左
-    public func setEnlargeEdge(top:CGFloat,right:CGFloat,bottom:CGFloat,left:CGFloat)  {
+    public func setEnlargeEdge(top: CGFloat, right: CGFloat, bottom: CGFloat, left: CGFloat) {
         
         self.topEdge = top
         self.rightEdge = right
@@ -157,12 +125,12 @@ extension UIButton {
         let bottom = self.bottomEdge ?? 0
         let top = self.topEdge ?? 0
         
-        var rect:CGRect
+        var rect: CGRect
         if left > 0 || right > 0 || bottom > 0 || top > 0 {
             rect = CGRect(x: self.bounds.origin.x - left,
                                      y: self.bounds.origin.y - top,
                                      width: self.bounds.size.width + left + right, height: self.bounds.size.height + top + bottom)
-        }else{
+        } else {
             rect = self.bounds
         }
         
@@ -180,7 +148,7 @@ extension UIButton {
     /// - Parameters:
     ///   - imageWidth: imageWidth
     ///   - space: image和Button的间距
-    public func setImageFrontTextWithCenterAlignment(imageWidth:CGFloat, space:CGFloat) {
+    public func setImageFrontTextWithCenterAlignment( imageWidth: CGFloat, space: CGFloat) {
         
         let image = UIImage.scaleTo(image: self.imageView!.image!, w: imageWidth, h: imageWidth)
         setImage(image, for: .normal)
@@ -197,7 +165,7 @@ extension UIButton {
     ///   - imageWidth: imageWidth
     ///   - space: space
     ///   - buttonWidth: buttonWidth
-    public func setImageFrontTextWithLeftAlignment(imageWidth:CGFloat, space:CGFloat,buttonWidth : CGFloat) {
+    public func setImageFrontTextWithLeftAlignment(imageWidth: CGFloat, space: CGFloat, buttonWidth: CGFloat) {
         
         let image = UIImage.scaleTo(image: self.imageView!.image!, w: imageWidth, h: imageWidth)
         setImage(image, for: .normal)
@@ -215,7 +183,7 @@ extension UIButton {
     /// - Parameters:
     ///   - imageWidth: imageWidth
     ///   - space: space
-    public func setImageFrontTextWithTopAlignment(imageWidth:CGFloat, space:CGFloat) {
+    public func setImageFrontTextWithTopAlignment(imageWidth: CGFloat, space: CGFloat) {
         
         let image = UIImage.scaleTo(image: self.imageView!.image!, w: imageWidth, h: imageWidth)
         setImage(image, for: .normal)

@@ -23,6 +23,7 @@
 		5E59B14B224098FD00504BE9 /* UITextField+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E59B13B224098FD00504BE9 /* UITextField+BLExt.swift */; };
 		5E59B14C224098FD00504BE9 /* UILabel+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E59B13C224098FD00504BE9 /* UILabel+BLExt.swift */; };
 		5E59B14D224098FD00504BE9 /* UIImage+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E59B13D224098FD00504BE9 /* UIImage+BLExt.swift */; };
+		5EBCC3572447109F003990E1 /* UIControl+BLExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBCC3562447109F003990E1 /* UIControl+BLExt.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		5E59B13B224098FD00504BE9 /* UITextField+BLExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+BLExt.swift"; sourceTree = "<group>"; };
 		5E59B13C224098FD00504BE9 /* UILabel+BLExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+BLExt.swift"; sourceTree = "<group>"; };
 		5E59B13D224098FD00504BE9 /* UIImage+BLExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+BLExt.swift"; sourceTree = "<group>"; };
+		5EBCC3562447109F003990E1 /* UIControl+BLExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIControl+BLExt.swift"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* BLUtil_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLUtil_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				5E59B13B224098FD00504BE9 /* UITextField+BLExt.swift */,
 				5E59B13C224098FD00504BE9 /* UILabel+BLExt.swift */,
 				5E59B13D224098FD00504BE9 /* UIImage+BLExt.swift */,
+				5EBCC3562447109F003990E1 /* UIControl+BLExt.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -326,6 +330,7 @@
 				5E59B14B224098FD00504BE9 /* UITextField+BLExt.swift in Sources */,
 				5E59B149224098FD00504BE9 /* UIView+BLExt.swift in Sources */,
 				5E59B148224098FD00504BE9 /* UITapGestureRecognizer+BLExt.swift in Sources */,
+				5EBCC3572447109F003990E1 /* UIControl+BLExt.swift in Sources */,
 				5E59B145224098FD00504BE9 /* Date+BLExt.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				5E59B146224098FD00504BE9 /* Array+BLExt.swift in Sources */,

@@ -26,8 +26,8 @@ extension UIView {
         }
     }
     
-    /// ViewParam
-    public var ViewParam: Dictionary<String, Any>? {
+    ///ViewParam
+    public var ViewParam: [String: Any]? {
         set {
             objc_setAssociatedObject(self, RunTimeViewKey.RunTimeViewParam!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
         }
@@ -60,12 +60,12 @@ extension UIView {
     }
     
     /// bottom
-    public var bottom:CGFloat{
+    public var bottom: CGFloat {
         return Y + H
     }
     
     /// right
-    public var right:CGFloat{
+    public var right: CGFloat {
         return X + W
     }
     
@@ -80,6 +80,7 @@ extension UIView {
     }
 }
 
+// MARK: 添加方法
 extension UIView {
     
     /// 移除所有子视图
@@ -102,7 +103,7 @@ extension UIView {
         layer.masksToBounds = true
     }
     
-    /// 设置顶部边框
+    ///设置顶部边框
     public func addBorderTop(size: CGFloat, color: UIColor) {
         addBorderUtility(x: 0, y: 0, width: frame.width, height: size, color: color)
     }

@@ -8,27 +8,27 @@
 
 import UIKit
 
-/// 手机号类型
+//手机号类型
 public enum MobilePhoneType: String {
     
-    case MobileCommon = "MobileCommon"
-    case MobileSpecial = "MobileSpecial"
+    case MobileCommon
+    case MobileSpecial
 }
 
 struct RunTimeTextFieldKey {
     
-    /// 最大数量
+    ///最大数量
     static let maxCount = UnsafeRawPointer.init(bitPattern: "maxCount".hashValue)
-    /// 金钱类型
+    ///金钱类型
     static let moneyType = UnsafeRawPointer.init(bitPattern: "moneyType".hashValue)
-    /// 手机号类型 普通的12345678901   344格式 123 4567 8901
+    ///手机号类型 普通的12345678901   344格式 123 4567 8901
     static let MobileType = UnsafeRawPointer.init(bitPattern: "MobileType".hashValue)
 }
 
 extension UITextField {
     
-    /// 开始输入的监听
-    @objc public func textFieldStartChange() {
+    //开始输入的监听
+    @objc func textFieldStartChange() {
         
         //是否是金额
         let MonType = self.moneyType ?? false
@@ -40,8 +40,8 @@ extension UITextField {
         }
     }
     
-    /// 文本变化时的监听
-    @objc public func textFieldDidChange() {
+    ///文本变化时的监听
+    @objc func textFieldDidChange() {
         
          //最大数量限制
         let count = self.maxCount ?? 0
@@ -59,7 +59,7 @@ extension UITextField {
         }
     }
     
-    /// 最大数量限制
+    //最大数量限制
     public func setMAXCountNumber() {
         
         let TFText = self.text ?? ""
@@ -68,11 +68,13 @@ extension UITextField {
             self.text = stringByReplacing(textString: TFText, index: self.maxCount!, length: count-self.maxCount!, replacText: "")
         }
     }
-   
-    /// 金钱类型
-    ///  - 1.要求用户输入首位不能为小数点;
-    ///  - 2.小数点后不超过两位，小数点无法输入超过一个;
-    ///  - 3.如果首位为0，后面仅能输入小数点.
+    
+    //金钱类型
+    /*
+     1.要求用户输入首位不能为小数点;
+     2.小数点后不超过两位，小数点无法输入超过一个;
+     3.如果首位为0，后面仅能输入小数点
+     */
     public func limitMoneyType() {
         
         var TFText = self.text ?? ""
@@ -81,7 +83,7 @@ extension UITextField {
             TFText = stringByReplacing(textString: TFText, index: 0, length: 1, replacText: "0.")
         }
         //第一位是0 那么后面是只能输入.
-        if (TFText.hasPrefix("0") && TFText.count > 1) {
+        if TFText.hasPrefix("0"), TFText.count > 1 {
              TFText = stringByReplacing(textString: TFText, index: 1, length: 1, replacText: ".")
         }
         
@@ -94,32 +96,32 @@ extension UITextField {
         self.text = TFText
     }
     
-    /// 手机号,第一个是1 总11位
+    //手机号,第一个是1 总11位
     public func limitMobileType() {
         
         var TFText = self.text ?? ""
         let count = TFText.count
-        if (TFText.hasPrefix("1") == false) && (TFText.count > 0){
+        if (TFText.hasPrefix("1") == false) && (TFText.count > 0) {
             TFText = stringByReplacing(textString: TFText, index: 0, length: 1, replacText: "1.")
         }
         
         if self.MobileType == MobilePhoneType.MobileCommon {
             if TFText.count > 11 {
-                TFText = stringByReplacing(textString: TFText, index: 11, length: count-11, replacText: "")
+                TFText = stringByReplacing(textString: TFText, index: 11, length: count - 11, replacText: "")
             }
-        }else if self.MobileType == MobilePhoneType.MobileSpecial {
-            if TFText.count == 3 || TFText.count == 8{
-                TFText = TFText + " "
+        } else if self.MobileType == MobilePhoneType.MobileSpecial {
+            if TFText.count == 3 || TFText.count == 8 {
+                TFText += " "
             }
             if TFText.count > 13 {
-                TFText = stringByReplacing(textString: TFText, index: 13, length: count-13, replacText: "")
+                TFText = stringByReplacing(textString: TFText, index: 13, length: count - 13, replacText: "")
             }
         }
         self.text = TFText
     }
     
-    /// 字符串的替换
-    public func stringByReplacing(textString:String,index:Int,length:Int,replacText:String) -> String {
+    //字符串的替换
+    public func stringByReplacing(textString: String, index: Int, length: Int, replacText: String) -> String {
         
         var TEXT = textString
         let startIndex = textString.index(textString.startIndex, offsetBy: index)
@@ -130,7 +132,7 @@ extension UITextField {
 
 extension UITextField {
     
-    /// 设置placehold颜色
+    ///设置placehold颜色
     public func setPlaceHolderTextColor(_ color: UIColor) {
         
         guard let holder = placeholder, !holder.isEmpty else { return }
@@ -142,15 +144,15 @@ extension UITextField {
     /// - Parameters:
     ///   - leftWidth: 左侧距离
     ///   - rightWidth: 右侧距离
-    public func distanceSides(_ leftWidth:CGFloat,_ rightWidth:CGFloat? = 0) {
+    public func distanceSides(_ leftWidth: CGFloat, _ rightWidth: CGFloat? = 0) {
         
         //左侧view
         leftView = UIView(frame: CGRect(x: 0, y: 0, width: leftWidth, height: 5))
-        leftViewMode = UITextFieldViewMode.always
+        leftViewMode = UITextField.ViewMode.always
         
         //右侧view
         rightView = UIView(frame: CGRect(x: 0, y: 0, width: rightWidth!, height: 5))
-        rightViewMode = UITextFieldViewMode.always
+        rightViewMode = UITextField.ViewMode.always
     }
     
     /// 添加标题
@@ -159,12 +161,12 @@ extension UITextField {
     ///   - titleLabel: titleLabel
     ///   - titleWidth: titleWidth
     ///   - padding: 距离右侧输入框的距离
-    public func addLeftTile(titleLabel:UILabel,titleWidth:CGFloat,padding: CGFloat) {
+    public func addLeftTile(titleLabel: UILabel, titleWidth: CGFloat, padding: CGFloat) {
         
         leftView = UIView(frame: CGRect(x: 0, y: 0, width: titleWidth + padding + CGFloat(5), height: 30))
         titleLabel.frame = CGRect(x: 5, y: 0, width: titleWidth, height: 30)
         leftView?.addSubview(titleLabel)
-        self.leftViewMode = UITextFieldViewMode.always
+        self.leftViewMode = UITextField.ViewMode.always
     }
     
     /// 添加左侧icon
@@ -173,13 +175,13 @@ extension UITextField {
     ///   - image: image
     ///   - size: icon的size
     ///   - padding: 距离文本距离
-    public func addLeftIcon(_ image: UIImage,size:CGSize,padding: CGFloat) {
+    public func addLeftIcon(_ image: UIImage, size: CGSize, padding: CGFloat) {
         
         leftView = UIView(frame: CGRect(x: 0, y: 0, width: size.width+2*padding-3, height: size.height))
         let imageView = UIImageView(image: image)
         imageView.frame = CGRect(x: padding, y: 0, width: size.width, height: size.height)
         self.leftView?.addSubview(imageView)
-        self.leftViewMode = UITextFieldViewMode.always
+        self.leftViewMode = UITextField.ViewMode.always
     }
     
     /// 添加右侧icon
@@ -188,50 +190,50 @@ extension UITextField {
     ///   - image: image
     ///   - size: size
     ///   - padding: padding
-    public func addRightIcon(_ image: UIImage,size:CGSize,padding: CGFloat) {
+    public func addRightIcon(_ image: UIImage, size: CGSize, padding: CGFloat) {
         
         self.rightView = UIView(frame: CGRect(x: 0, y: 0, width: size.width+2*padding, height: size.height))
         let imageView = UIImageView(image: image)
         imageView.frame = CGRect(x: padding, y: 0, width: size.width, height: size.height)
         self.rightView?.addSubview(imageView)
-        rightViewMode = UITextFieldViewMode.always
+        rightViewMode = .always
     }
 }
 
 extension UITextField {
     
-    /// 最大数量
+    //最大数量
     public var maxCount: Int? {
         set {
             objc_setAssociatedObject(self, RunTimeTextFieldKey.maxCount!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
             //添加监听
-            self.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
+            self.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
         }
         get {
             return objc_getAssociatedObject(self, RunTimeTextFieldKey.maxCount!) as? Int
         }
     }
     
-    /// 金钱类型
+    //金钱类型
     public var moneyType: Bool? {
         set {
             objc_setAssociatedObject(self, RunTimeTextFieldKey.moneyType!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
             //添加监听
-            self.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
-            self.addTarget(self, action: #selector(textFieldStartChange), for: UIControlEvents.editingDidBegin)
+            self.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+            self.addTarget(self, action: #selector(textFieldStartChange), for: .editingDidBegin)
         }
         get {
             return objc_getAssociatedObject(self, RunTimeTextFieldKey.moneyType!) as? Bool
         }
     }
     
-    /// 手机号类型
+    //手机号类型
     public var MobileType: MobilePhoneType? {
         set {
             objc_setAssociatedObject(self, RunTimeTextFieldKey.MobileType!, newValue, .OBJC_ASSOCIATION_COPY_NONATOMIC)
             //添加监听
-            self.addTarget(self, action: #selector(textFieldDidChange), for: UIControlEvents.editingChanged)
-          self.addTarget(self, action: #selector(textFieldStartChange), for: UIControlEvents.editingDidBegin)
+            self.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
+          self.addTarget(self, action: #selector(textFieldStartChange), for: .editingDidBegin)
         }
         get {
             return objc_getAssociatedObject(self, RunTimeTextFieldKey.MobileType!) as? MobilePhoneType

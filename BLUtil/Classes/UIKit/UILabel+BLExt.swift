@@ -8,12 +8,13 @@
 
 import UIKit
 
-fileprivate struct RunTimeLabelKey {
+private struct RunTimeLabelKey {
     
     static let isCopyable = UnsafeRawPointer.init(bitPattern: "isCopyable".hashValue)
 }
 
-extension UILabel{
+// MARK: 初始化
+extension UILabel {
   
     /// 初始化
     ///
@@ -22,7 +23,7 @@ extension UILabel{
     ///   - color: 颜色
     ///   - fondSize: 大小
     ///   - TextAlignment: 位置
-    convenience init(title:String,color:UIColor? = UIColor.black,fondSize:CGFloat?,TextAlignment:NSTextAlignment?) {
+    public convenience init(title: String, color: UIColor? = UIColor.black, fondSize: CGFloat?, TextAlignment: NSTextAlignment?) {
         
         self.init()
         self.text = title
@@ -33,19 +34,17 @@ extension UILabel{
         switch Alignment {
         case .left:
             self.textAlignment = NSTextAlignment.left
-            break
         case .center:
             self.textAlignment = NSTextAlignment.center
-            break
         case .right:
             self.textAlignment = NSTextAlignment.right
-            break
         default:
             break
         }
     }
 }
 
+// MARK: 事件扩展
 extension UILabel {
     
     /// 是否拥有长按复制功能
@@ -83,9 +82,9 @@ extension UILabel {
         //  而 UIPasteboard 的string只能接受 NSString 类型
         //  所以要做相应的判断
     
-        if ((self.text) != nil) {
+        if self.text != nil {
              UIPasteboard.general.string = self.text
-        }else{
+        } else {
              UIPasteboard.general.string = self.attributedText?.string
         }
     }
@@ -101,7 +100,7 @@ extension UILabel {
     }
     
     /// 拥有成为响应者的能力
-    open override var canBecomeFirstResponder: Bool{
+    open override var canBecomeFirstResponder: Bool {
         return true
     }
 }

@@ -6,13 +6,12 @@
 //  Copyright © 2018-2028 lin bo. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-extension String{
+extension String {
     
     /// 字符串的截取
-    public func subStringFrom(index: Int,length:Int) -> String {
+    public func subStringFrom(index: Int, length: Int) -> String {
         
         if self.count > index {
             let startIndex = self.index(self.startIndex, offsetBy: index)
@@ -53,7 +52,7 @@ extension String{
     }
     
     /// 替换指定范围内的字符串
-    public mutating func stringByReplacingCharactersInRange(index:Int,length:Int,replacText:String) -> String {
+    public mutating func stringByReplacingCharactersInRange(index: Int, length: Int, replacText: String) -> String {
         
         let startIndex = self.index(self.startIndex, offsetBy: index)
         self.replaceSubrange(startIndex..<self.index(startIndex, offsetBy: length), with: replacText)
@@ -61,7 +60,7 @@ extension String{
     }
     
     /// 替换指定字符串
-    public mutating func stringByReplacingstringByReplacingString(text:String,replacText:String) -> String {
+    public mutating func stringByReplacingstringByReplacingString(text: String, replacText: String) -> String {
         
         return self.replacingOccurrences(of: text, with: replacText)
     }
@@ -74,13 +73,13 @@ extension String{
     }
     
     /// 删除指定字符串
-    public mutating func deleteString(string:String) -> String {
+    public mutating func deleteString(string: String) -> String {
         
         return self.replacingOccurrences(of: string, with: "")
     }
     
     /// 字符的插入
-    public mutating func insertString(text:Character,index:Int) -> String {
+    public mutating func insertString(text: Character, index: Int) -> String {
         
         let start = self.index(self.startIndex, offsetBy: index)
         self.insert(text, at: start)
@@ -88,7 +87,7 @@ extension String{
     }
     
     /// 字符串的插入
-    public mutating func insertString(text:String,index:Int) -> String {
+    public mutating func insertString(text: String, index: Int) -> String {
         
         let start = self.index(self.startIndex, offsetBy: index)
         self.insert(contentsOf: text, at: start)
@@ -99,7 +98,7 @@ extension String{
     ///
     /// - Parameter string: 拆分数组使用的字符串
     /// - Returns: 字符串数组
-    public func split(string:String) -> [String] {
+    public func split(string: String) -> [String] {
         
         return NSString(string: self).components(separatedBy: string)
     }
@@ -121,7 +120,7 @@ extension String {
     }
     
     /// base64编码
-    public var base64: String {
+    var base64: String {
         
         let plainData = (self as NSString).data(using: String.Encoding.utf8.rawValue)
         let base64String = plainData!.base64EncodedString(options: NSData.Base64EncodingOptions(rawValue: 0))
@@ -137,7 +136,7 @@ extension String {
         return nil
     }
     
-    ///是否是邮箱
+    /// 是否是邮箱
     public var isEmail: Bool {
         
         return range(of: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}", options: .regularExpression, range: nil, locale: nil) != nil }
@@ -159,14 +158,14 @@ extension String {
     }
     
     /// 是否是字母数字的组合
-    public var isAlphanumeric: Bool {
+    var isAlphanumeric: Bool {
         return !isEmpty && range(of: "[^a-zA-Z0-9]", options: .regularExpression) == nil
     }
 }
 
-extension String{
+extension String {
      
-    ///变成Int 类型
+    /// 变成Int 类型
     public func toInt() -> Int? {
         
         if let num = NumberFormatter().number(from: self) {
@@ -204,31 +203,29 @@ extension String {
     /// - Parameters:
     ///   - font: font
     ///   - fixedWidth: fixedWidth
-    public func obtainTextHeight(font : UIFont = UIFont.systemFont(ofSize: 18), fixedWidth : CGFloat) -> CGFloat {
+    func obtainTextHeight(font: UIFont = UIFont.systemFont(ofSize: 18), fixedWidth: CGFloat) -> CGFloat {
         
         guard self.count > 0 && fixedWidth > 0 else {
             return 0
         }
         
-        let size = CGSize(width:fixedWidth, height:CGFloat.greatestFiniteMagnitude)
-        let text = self as NSString
-        let rect = text.boundingRect(with: size, options:.usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : font], context:nil)
+        let size = CGSize(width: fixedWidth, height: CGFloat.greatestFiniteMagnitude)
+        let text = self
+        let rect = text.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
         
-        return rect.size.height
+        return ceil(rect.size.height)
     }
     
     /// 获取文本宽度
-    ///
-    /// - Parameter font: font
-    public func obtainTextWidth(font : UIFont = UIFont.systemFont(ofSize: 17)) -> CGFloat {
+    func obtainTextWidth(font: UIFont = UIFont.systemFont(ofSize: 17)) -> CGFloat {
         
         guard self.count > 0 else {
             return 0
         }
         
-        let size = CGSize(width:CGFloat.greatestFiniteMagnitude, height:0)
+        let size = CGSize(width: CGFloat.greatestFiniteMagnitude, height: 0)
         let text = self as NSString
-        let rect = text.boundingRect(with: size, options:.usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font : font], context:nil)
+        let rect = text.boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
         
         return rect.size.width
     }

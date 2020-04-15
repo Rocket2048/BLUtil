@@ -6,15 +6,15 @@
 //  Copyright © 2018-2028 lin bo. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension Dictionary {
     
     /// 拼接字典
-    public mutating func addDictionary(_ para:Dictionary?) -> Dictionary{
+    public mutating func addDictionary(_ para: Dictionary?) -> Dictionary {
         
-        if para != nil {
-            for (key,value) in para! {
+        if let para = para {
+            for (key, value) in para {
                 self[key] = value
             }
         }

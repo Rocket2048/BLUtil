@@ -6,12 +6,12 @@
 //  Copyright © 2018-2028 lin bo. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 extension Date {
     
-    /// 获取当前时间字符串
-    public var CurrentStingTime:String {
+    ///获取当前时间字符串
+    public var CurrentStingTime: String {
         
         let dateFormatter = DateFormatter.init()
         dateFormatter.dateFormat = "YYYY-MM-dd HH:mm:ss"
@@ -20,21 +20,21 @@ extension Date {
     }
      
     /// 获取当前时间 date
-    public var CurrentDateTime:Date {
+    public var CurrentDateTime: Date {
         
         let date = Date.init(timeInterval: 60*60*8, since: self)
         return date
     }
     
-    /// 获取当前时间戳
-    public var CurrentStampTime:u_long {
+    ///获取当前时间戳
+    public var CurrentStampTime: u_long {
         
         let date = Date.init(timeInterval: 0, since: self)
         let stamp = date.timeIntervalSince1970
         return u_long(stamp)
     }
-    /// 获取当天0点时间戳
-    public var todayZeroStampTime:u_long {
+    ///获取当天0点时间戳
+    public var todayZeroStampTime: u_long {
         
         let currentDate = Date()
         let dateFormatter = DateFormatter()
@@ -48,13 +48,13 @@ extension Date {
     }
     
     /// date 转化为时间戳
-    public func StampTime(from date:Date) ->  u_long{
+    public func StampTime(from date: Date) -> u_long {
         
         return u_long(date.timeIntervalSince1970)
     }
     
-    /// date 转字符串
-    public func dateString(from date:Date) -> String {
+    ///date 转字符串
+    public func dateString(from date: Date) -> String {
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -62,45 +62,44 @@ extension Date {
         return dateS
     }
     
-    /// 时间戳转化为date
-    public func date(from StampTime:u_long) -> Date {
+    /// 时间戳转化为date（北京时间）
+    public static func date(from StampTime: u_long) -> Date {
         
-        //转换为时间
-        let timeInterval:TimeInterval = TimeInterval(StampTime)
+        let timeInterval: TimeInterval = TimeInterval(StampTime)
         let date = NSDate(timeIntervalSince1970: timeInterval + 8*60*60)
         return date as Date
     }
     
-    /// 时间戳转化为字符串
-    public func dateString(from StampTime:u_long) -> String {
+    /// 时间戳转化为字符串（北京时间）
+    public func dateString(from StampTime: u_long) -> String {
 
-        let timeInterval:TimeInterval = TimeInterval(StampTime)
+        let timeInterval: TimeInterval = TimeInterval(StampTime)
         let date = NSDate(timeIntervalSince1970: timeInterval + 8*60*60)
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let dateS = formatter.string(from: date as Date)
-       
         return dateS
     }
     
-    /// 字符串转date
-    public func date(from dateString:String) -> Date {
+    /// 字符串转date（北京时间）
+    public static func date(from dateString: String) -> Date? {
         
         let dateFormatter = DateFormatter.init()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         let date = dateFormatter.date(from: dateString)
- 
-        return date!
+        return date
     }
     
-    /// 字符串转时间戳
-    public func StampTime(from dateString:String) -> u_long {
+    /// 字符串转时间戳（北京时间）
+    public func StampTime(from dateString: String) -> u_long? {
         
         let dateFormatter = DateFormatter.init()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
-        let date = dateFormatter.date(from: dateString)
-        let stamp = date!.timeIntervalSince1970 - 8*60*60
-
+        
+        guard let date = dateFormatter.date(from: dateString) else {
+            return nil
+        }
+        let stamp = date.timeIntervalSince1970 - 8*60*60
         return u_long(stamp)
     }
 }
@@ -128,12 +127,12 @@ extension Date {
     /// 周几
     public var weekday: String {
         
-        let weekdays = [NSNull.init(),"星期天","星期一","星期二","星期三","星期四","星期五","星期六"] as [Any]
-        var calendar = Calendar(identifier:.gregorian)
+        let weekdays = [NSNull.init(), "星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"] as [Any]
+        var calendar = Calendar(identifier: .gregorian)
         let timeZone = NSTimeZone.init(name: "Asia/Shanghai")
         calendar.timeZone = timeZone! as TimeZone
         let theComponents = calendar.dateComponents([.year, .month, .day, .weekday, .hour, .minute, .second], from: self)
-        return weekdays[theComponents.weekday!] as! String
+        return weekdays[theComponents.weekday!] as? String ?? ""
     }
     
     /// 是否在将来
@@ -156,7 +155,7 @@ extension Date {
         return format.string(from: self) == format.string(from: Date())
     }
     
-    /// 是否是昨天
+    /// 是否是明天
     public var isTomorrow: Bool {
         
         let format = DateFormatter()
@@ -165,32 +164,3 @@ extension Date {
         return format.string(from: self) == format.string(from: tomorrow!)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
